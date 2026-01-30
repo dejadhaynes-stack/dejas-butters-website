@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - Deja's Butters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Deja's Butters</h1>
+                    <p class="tagline">Pure. Organic. Natural. | Black-Owned 👑</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#" class="cart-icon" onclick="toggleCart()">
+                        🛒 Cart (<span id="cart-count">0</span>)
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="index.html" class="back-button">← Back to Products</a>
+
+            <div class="product-detail-grid">
+                <div id="product-image" class="product-detail-image">
+                    <!-- Dynamic content loaded by JS -->
+                </div>
+
+                <div class="product-detail-info">
+                    <h1 id="product-name">Product Name</h1>
+                    <p class="product-price" id="product-price">$0.00</p>
+                    <p class="product-detail-description" id="product-description">
+                        Product description will load here
+                    </p>
+                    <button class="add-to-cart" id="add-to-cart-btn" style="max-width: 300px;">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="ingredients-section">
+                <h3>🌿 Pure Ingredients</h3>
+                <ul id="ingredients-list">
+                    <!-- Dynamic content loaded by JS -->
+                </ul>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Key Benefits</h3>
+                <ul id="benefits-list">
+                    <!-- Dynamic content loaded by JS -->
+                </ul>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every jar of Deja's Butters is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only certified organic ingredients specifically chosen to enhance and protect
+                    melanin-rich skin. Our products are formulated with darker skin tones in mind, addressing concerns like
+                    hyperpigmentation and ashiness while bringing out your natural glow. We never test on animals and are
+                    committed to sustainable and ethical sourcing practices. Our products are free from parabens, sulfates,
+                    synthetic fragrances, and artificial colors. What you see on the label is what you get - pure, natural
+                    goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@dejasbutters.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

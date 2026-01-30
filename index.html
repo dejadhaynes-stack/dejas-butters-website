@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deja's Butters - Organic Luxury Body Care</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Deja's Butters</h1>
+                    <p class="tagline">Pure. Organic. Natural. | Black-Owned 👑</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#" class="cart-icon" onclick="toggleCart()">
+                        🛒 Cart (<span id="cart-count">0</span>)
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="black-owned-badge">Black-Owned Business 👑</div>
+            <h2>Crafted for Melanin-Rich Skin</h2>
+            <p>Handcrafted organic butters celebrating the beauty of darker skin tones</p>
+            <p class="hero-subtext">Made with love by a Black woman, for our community and beyond</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Our Signature Collection</h2>
+            <p class="section-subtitle">Each butter is carefully crafted to enhance and protect melanin-rich skin</p>
+
+            <div class="products-grid">
+                <div class="product-card" data-product="golden-glow-shea">
+                    <div class="product-image" style="background: linear-gradient(135deg, #f5e6d3 0%, #d4a574 100%);">
+                        <span class="product-icon">🌟</span>
+                    </div>
+                    <h3>Golden Glow Shea</h3>
+                    <p class="product-description">Pure shea butter that melts into your skin, leaving a golden radiance</p>
+                    <p class="product-price">$24.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Golden Glow Shea', 24.99)">Add to Cart</button>
+                    <a href="product.html?id=golden-glow-shea" class="view-details">View Details</a>
+                </div>
+
+                <div class="product-card" data-product="chocolate-dream-cocoa">
+                    <div class="product-image" style="background: linear-gradient(135deg, #8b4513 0%, #d2691e 100%);">
+                        <span class="product-icon">🍫</span>
+                    </div>
+                    <h3>Chocolate Dream Cocoa</h3>
+                    <p class="product-description">Rich cocoa butter with a heavenly chocolate scent</p>
+                    <p class="product-price">$26.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Chocolate Dream Cocoa', 26.99)">Add to Cart</button>
+                    <a href="product.html?id=chocolate-dream-cocoa" class="view-details">View Details</a>
+                </div>
+
+                <div class="product-card" data-product="tropical-paradise-coconut">
+                    <div class="product-image" style="background: linear-gradient(135deg, #f0f8ff 0%, #87ceeb 100%);">
+                        <span class="product-icon">🥥</span>
+                    </div>
+                    <h3>Tropical Paradise Coconut</h3>
+                    <p class="product-description">Virgin coconut oil that transports you to tropical islands</p>
+                    <p class="product-price">$22.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Tropical Paradise Coconut', 22.99)">Add to Cart</button>
+                    <a href="product.html?id=tropical-paradise-coconut" class="view-details">View Details</a>
+                </div>
+
+                <div class="product-card" data-product="green-goddess-avocado">
+                    <div class="product-image" style="background: linear-gradient(135deg, #90ee90 0%, #3cb371 100%);">
+                        <span class="product-icon">🥑</span>
+                    </div>
+                    <h3>Green Goddess Avocado</h3>
+                    <p class="product-description">Creamy avocado butter packed with vitamins and nutrients</p>
+                    <p class="product-price">$28.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Green Goddess Avocado', 28.99)">Add to Cart</button>
+                    <a href="product.html?id=green-goddess-avocado" class="view-details">View Details</a>
+                </div>
+
+                <div class="product-card" data-product="soothing-aloe-essence">
+                    <div class="product-image" style="background: linear-gradient(135deg, #e0f2f1 0%, #80cbc4 100%);">
+                        <span class="product-icon">🌿</span>
+                    </div>
+                    <h3>Soothing Aloe Essence</h3>
+                    <p class="product-description">Calming aloe vera butter for sensitive and sun-kissed skin</p>
+                    <p class="product-price">$25.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Soothing Aloe Essence', 25.99)">Add to Cart</button>
+                    <a href="product.html?id=soothing-aloe-essence" class="view-details">View Details</a>
+                </div>
+
+                <div class="product-card" data-product="sunset-mango-bliss">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffe4b5 0%, #ffa500 100%);">
+                        <span class="product-icon">🥭</span>
+                    </div>
+                    <h3>Sunset Mango Bliss</h3>
+                    <p class="product-description">Luxurious mango butter that soothes and softens</p>
+                    <p class="product-price">$27.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Sunset Mango Bliss', 27.99)">Add to Cart</button>
+                    <a href="product.html?id=sunset-mango-bliss" class="view-details">View Details</a>
+                </div>
+
+                <div class="product-card" data-product="mediterranean-olive-elixir">
+                    <div class="product-image" style="background: linear-gradient(135deg, #f0e68c 0%, #bdb76b 100%);">
+                        <span class="product-icon">🫒</span>
+                    </div>
+                    <h3>Mediterranean Olive Elixir</h3>
+                    <p class="product-description">Extra virgin olive oil infused with ancient beauty secrets</p>
+                    <p class="product-price">$23.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Mediterranean Olive Elixir', 23.99)">Add to Cart</button>
+                    <a href="product.html?id=mediterranean-olive-elixir" class="view-details">View Details</a>
+                </div>
+
+                <div class="product-card" data-product="youth-revival-collagen">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffe4e1 0%, #ffc0cb 100%);">
+                        <span class="product-icon">✨</span>
+                    </div>
+                    <h3>Youth Revival Collagen</h3>
+                    <p class="product-description">Collagen peptides blend for firm, youthful-looking skin</p>
+                    <p class="product-price">$32.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Youth Revival Collagen', 32.99)">Add to Cart</button>
+                    <a href="product.html?id=youth-revival-collagen" class="view-details">View Details</a>
+                </div>
+
+                <div class="product-card" data-product="natures-aromatherapy-blend">
+                    <div class="product-image" style="background: linear-gradient(135deg, #e6e6fa 0%, #9370db 100%);">
+                        <span class="product-icon">🌸</span>
+                    </div>
+                    <h3>Nature's Aromatherapy Blend</h3>
+                    <p class="product-description">Essential oils mix for mind, body, and soul balance</p>
+                    <p class="product-price">$29.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Nature\'s Aromatherapy Blend', 29.99)">Add to Cart</button>
+                    <a href="product.html?id=natures-aromatherapy-blend" class="view-details">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <span class="feature-icon">👑</span>
+                    <h3>Black-Owned</h3>
+                    <p>Proudly Black-owned and supporting our community</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✊🏿</span>
+                    <h3>For Melanin-Rich Skin</h3>
+                    <p>Specially formulated for darker skin tones</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🌱</span>
+                    <h3>100% Organic</h3>
+                    <p>Only the purest, certified organic ingredients</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🚫</span>
+                    <h3>No Chemicals</h3>
+                    <p>Free from parabens, sulfates, and artificial additives</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🤲🏾</span>
+                    <h3>Handcrafted</h3>
+                    <p>Made in small batches with care and attention</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🐰</span>
+                    <h3>Cruelty-Free</h3>
+                    <p>Never tested on animals, always ethical</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@dejasbutters.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
