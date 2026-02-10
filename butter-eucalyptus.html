@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eucalyptus Mint Body Butter - Deja's Butters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Deja's Butters</h1>
+                    <p class="tagline">Pure. Organic. Natural. | Black-Owned 👑</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#" class="cart-icon" onclick="toggleCart()">
+                        🛒 Cart (<span id="cart-count">0</span>)
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="index.html" class="back-button">← Back to Products</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #d0f0c0 0%, #3cb371 100%);">
+                    <span class="product-icon">🌿</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Eucalyptus Mint Body Butter</h1>
+                    <p class="product-price">$28.99</p>
+
+                    <div class="product-detail-description">
+                        <h3>Description</h3>
+                        <p>
+                            Refresh and revitalize your melanin-rich skin with our Eucalyptus Mint Body Butter, a
+                            cooling, therapeutic blend that soothes both body and mind. Infused with pure eucalyptus
+                            and peppermint essential oils, this invigorating formula provides deep hydration while
+                            delivering a refreshing, spa-like experience with every application.
+                        </p>
+                        <p>
+                            Perfect for post-workout recovery or when you need relief from muscle tension, this butter
+                            combines the healing properties of eucalyptus with the cooling sensation of mint. The
+                            anti-inflammatory benefits work wonders on melanin-rich skin, helping to reduce irritation,
+                            fade dark spots, and promote healing while leaving you feeling refreshed and rejuvenated.
+                        </p>
+                    </div>
+
+                    <button class="add-to-cart" style="max-width: 300px;" onclick="addToCart('Eucalyptus Mint Body Butter', 28.99)">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="ingredients-section">
+                <h3>🌿 Pure Ingredients</h3>
+                <ul>
+                    <li>Organic Shea Butter (Unrefined)</li>
+                    <li>Organic Cocoa Butter</li>
+                    <li>Eucalyptus Essential Oil (Eucalyptus globulus)</li>
+                    <li>Peppermint Essential Oil (Mentha piperita)</li>
+                    <li>Organic Coconut Oil (Virgin, Cold-Pressed)</li>
+                    <li>Organic Sweet Almond Oil</li>
+                    <li>Vitamin E Oil (Natural Tocopherol)</li>
+                    <li>Organic Jojoba Oil</li>
+                </ul>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Proven Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Muscle Relief:</strong> Eucalyptus and mint provide natural pain relief for sore muscles and joints, perfect after workouts or long days</li>
+                    <li><strong>Anti-Inflammatory Power:</strong> Reduces skin inflammation, soothes eczema flare-ups, and calms irritated melanin-rich skin</li>
+                    <li><strong>Improved Circulation:</strong> Stimulates blood flow to promote healthier, more radiant skin and faster healing of dark spots</li>
+                    <li><strong>Deep Hydration:</strong> Rich butters penetrate deeply without white cast, keeping darker skin moisturized and preventing ashiness</li>
+                    <li><strong>Respiratory Benefits:</strong> Eucalyptus aroma helps clear sinuses and improve breathing while you moisturize</li>
+                    <li><strong>Cooling Sensation:</strong> Natural menthol provides a refreshing, tingly feeling that soothes and energizes skin</li>
+                    <li><strong>Antibacterial Properties:</strong> Helps prevent breakouts and skin infections, promoting clearer, healthier melanin-rich skin</li>
+                    <li><strong>Mental Clarity:</strong> Invigorating scent improves focus, reduces mental fatigue, and boosts energy levels</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Post-Workout Recovery:</strong> Apply generously to clean skin after exercise, focusing on
+                    sore muscles and joints. The cooling sensation and anti-inflammatory properties help reduce muscle
+                    soreness and promote faster recovery.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Morning Revitalizer:</strong> Use during your morning routine for an energizing boost. The
+                    refreshing scent helps wake you up and prepare you for the day ahead. Avoid applying near eyes or
+                    sensitive areas due to the cooling effect.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every jar of Deja's Butters is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only certified organic ingredients specifically chosen to enhance and protect
+                    melanin-rich skin. Our products are formulated with darker skin tones in mind, addressing concerns like
+                    hyperpigmentation and ashiness while bringing out your natural glow. We never test on animals and are
+                    committed to sustainable and ethical sourcing practices. Our products are free from parabens, sulfates,
+                    synthetic fragrances, and artificial colors. What you see on the label is what you get - pure, natural
+                    goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peppermint Refresh Sugar Scrub - Deja's Butters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Deja's Butters</h1>
+                    <p class="tagline">Pure. Organic. Natural. | Black-Owned 👑</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#" class="cart-icon" onclick="toggleCart()">
+                        🛒 Cart (<span id="cart-count">0</span>)
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="index.html" class="back-button">← Back to Products</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #e0f8f1 0%, #98d8c8 100%);">
+                    <span class="product-icon">🌱</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Peppermint Refresh Sugar Scrub</h1>
+                    <p class="product-price">$33.99</p>
+
+                    <div class="product-detail-description">
+                        <h3>Description</h3>
+                        <p>
+                            Awaken your senses and reveal radiant melanin-rich skin with our Peppermint Refresh Sugar
+                            Scrub. This invigorating exfoliating treatment combines fine organic sugar crystals with
+                            cooling peppermint essential oil to buff away dead skin cells, reduce hyperpigmentation,
+                            and leave your skin incredibly soft and glowing.
+                        </p>
+                        <p>
+                            Specially formulated for darker skin tones, this scrub gently removes the dull, ashy layer
+                            that can make melanin-rich skin appear lackluster. The peppermint provides a refreshing,
+                            tingly sensation while stimulating circulation to promote even skin tone and a natural glow.
+                            Follow with our body butter for the ultimate self-care experience that leaves your skin
+                            smooth, bright, and deeply moisturized.
+                        </p>
+                    </div>
+
+                    <button class="add-to-cart" style="max-width: 300px;" onclick="addToCart('Peppermint Refresh Sugar Scrub', 33.99)">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="ingredients-section">
+                <h3>🌿 Pure Ingredients</h3>
+                <ul>
+                    <li>Organic Cane Sugar (Fine Grain)</li>
+                    <li>Organic Coconut Oil (Virgin, Cold-Pressed)</li>
+                    <li>Organic Shea Butter (Unrefined)</li>
+                    <li>Peppermint Essential Oil (Mentha piperita)</li>
+                    <li>Organic Sweet Almond Oil</li>
+                    <li>Vitamin E Oil (Natural Tocopherol)</li>
+                    <li>Organic Jojoba Oil</li>
+                    <li>Peppermint Leaf Extract</li>
+                </ul>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Proven Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Exfoliates Dead Skin:</strong> Fine sugar crystals gently remove dead skin cells and dull layer without irritating melanin-rich skin</li>
+                    <li><strong>Reduces Hyperpigmentation:</strong> Regular exfoliation helps fade dark spots, acne scars, and uneven skin tone faster</li>
+                    <li><strong>Prevents Ingrown Hairs:</strong> Excellent for exfoliating before and after shaving or waxing to prevent ingrown hairs common in darker skin</li>
+                    <li><strong>Improves Circulation:</strong> Peppermint stimulates blood flow, promoting healthier, more radiant-looking skin</li>
+                    <li><strong>Cooling Sensation:</strong> Natural menthol provides a refreshing, invigorating experience that energizes your routine</li>
+                    <li><strong>Deep Cleansing:</strong> Removes impurities from pores without stripping natural oils, preventing ashiness after exfoliation</li>
+                    <li><strong>Enhances Product Absorption:</strong> Removes dead skin layer so moisturizers and treatments penetrate deeper into melanin-rich skin</li>
+                    <li><strong>Aromatherapy Benefits:</strong> Peppermint scent boosts energy, improves focus, and relieves mental fatigue</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>In the Shower:</strong> Apply to wet skin in the shower or bath. Massage in gentle circular
+                    motions, focusing on rough areas like elbows, knees, and heels. Use 2-3 times per week for best results.
+                    Rinse thoroughly with warm water and pat dry.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Pre-Shaving Prep:</strong> Exfoliate 24 hours before shaving or waxing to prevent ingrown hairs.
+                    The scrub lifts trapped hairs and smooths skin for a closer, cleaner shave. Follow with our body butter
+                    to lock in moisture and maintain your glow. Avoid using on broken skin or immediately after shaving.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every jar of Deja's Butters is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only certified organic ingredients specifically chosen to enhance and protect
+                    melanin-rich skin. Our products are formulated with darker skin tones in mind, addressing concerns like
+                    hyperpigmentation and ashiness while bringing out your natural glow. We never test on animals and are
+                    committed to sustainable and ethical sourcing practices. Our products are free from parabens, sulfates,
+                    synthetic fragrances, and artificial colors. What you see on the label is what you get - pure, natural
+                    goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

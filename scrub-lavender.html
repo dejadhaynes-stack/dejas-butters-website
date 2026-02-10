@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavender Calm Sugar Scrub - Deja's Butters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Deja's Butters</h1>
+                    <p class="tagline">Pure. Organic. Natural. | Black-Owned 👑</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#" class="cart-icon" onclick="toggleCart()">
+                        🛒 Cart (<span id="cart-count">0</span>)
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="index.html" class="back-button">← Back to Products</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #f0e6ff 0%, #b19cd9 100%);">
+                    <span class="product-icon">💜</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Lavender Calm Sugar Scrub</h1>
+                    <p class="product-price">$32.99</p>
+
+                    <div class="product-detail-description">
+                        <h3>Description</h3>
+                        <p>
+                            Drift into serenity while revealing smooth, radiant skin with our Lavender Calm Sugar Scrub.
+                            This soothing exfoliating treatment combines fine organic sugar crystals with pure French
+                            lavender essential oil to gently buff away dead skin cells while calming both body and mind.
+                            Specially formulated for melanin-rich skin, this scrub addresses hyperpigmentation while
+                            providing a tranquil, spa-like experience.
+                        </p>
+                        <p>
+                            Perfect for evening self-care rituals, this gentle scrub not only exfoliates but also delivers
+                            anti-inflammatory benefits that soothe irritated skin, reduce redness, and promote healing.
+                            The calming lavender aroma helps reduce stress and prepare you for restful sleep while the
+                            nourishing oils ensure your skin stays hydrated and glowing, never ashy. Follow with our
+                            Lavender Dreams Body Butter for the ultimate relaxation experience.
+                        </p>
+                    </div>
+
+                    <button class="add-to-cart" style="max-width: 300px;" onclick="addToCart('Lavender Calm Sugar Scrub', 32.99)">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="ingredients-section">
+                <h3>🌿 Pure Ingredients</h3>
+                <ul>
+                    <li>Organic Cane Sugar (Fine Grain)</li>
+                    <li>Organic Coconut Oil (Virgin, Cold-Pressed)</li>
+                    <li>Organic Shea Butter (Unrefined)</li>
+                    <li>Organic Lavender Essential Oil (Lavandula angustifolia)</li>
+                    <li>Organic Jojoba Oil</li>
+                    <li>Vitamin E Oil (Natural Tocopherol)</li>
+                    <li>Organic Sweet Almond Oil</li>
+                    <li>Dried Lavender Buds (for gentle exfoliation)</li>
+                </ul>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Proven Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Gentle Exfoliation:</strong> Fine sugar crystals remove dead skin cells without irritation, revealing smooth, glowing melanin-rich skin</li>
+                    <li><strong>Fades Dark Spots:</strong> Lavender's natural compounds help reduce hyperpigmentation and even out skin tone over time</li>
+                    <li><strong>Anti-Inflammatory Relief:</strong> Soothes eczema, psoriasis, and other inflammatory conditions common in sensitive melanin-rich skin</li>
+                    <li><strong>Prevents Ingrown Hairs:</strong> Regular exfoliation lifts trapped hairs and smooths skin, reducing bumps after shaving or waxing</li>
+                    <li><strong>Promotes Healing:</strong> Lavender oil accelerates healing of scars, wounds, and blemishes while preventing infection</li>
+                    <li><strong>Stress Relief:</strong> Calming lavender aroma reduces anxiety, promotes relaxation, and improves sleep quality</li>
+                    <li><strong>Moisturizing Formula:</strong> Nourishing oils prevent dryness after exfoliation, keeping darker skin hydrated and preventing ashiness</li>
+                    <li><strong>Improves Texture:</strong> Regular use smooths rough patches and creates soft, touchable skin with an even surface</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Evening Ritual:</strong> Use 2-3 times weekly during your evening shower or bath. Apply to wet
+                    skin and massage gently in circular motions, taking deep breaths to inhale the calming lavender aroma.
+                    Focus on rough areas and zones with hyperpigmentation. Rinse thoroughly and pat dry.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Self-Care Sunday:</strong> Transform your weekly exfoliation into a mindful self-care ritual.
+                    Light candles, play relaxing music, and take your time massaging the scrub into your skin. This is
+                    your moment to unwind and show your melanin-rich skin the love it deserves. Follow with Lavender
+                    Dreams Body Butter for maximum relaxation and hydration.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every jar of Deja's Butters is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only certified organic ingredients specifically chosen to enhance and protect
+                    melanin-rich skin. Our products are formulated with darker skin tones in mind, addressing concerns like
+                    hyperpigmentation and ashiness while bringing out your natural glow. We never test on animals and are
+                    committed to sustainable and ethical sourcing practices. Our products are free from parabens, sulfates,
+                    synthetic fragrances, and artificial colors. What you see on the label is what you get - pure, natural
+                    goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

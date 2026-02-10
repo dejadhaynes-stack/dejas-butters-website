@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unscented Natural Sugar Scrub - Deja's Butters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Deja's Butters</h1>
+                    <p class="tagline">Pure. Organic. Natural. | Black-Owned 👑</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#" class="cart-icon" onclick="toggleCart()">
+                        🛒 Cart (<span id="cart-count">0</span>)
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="index.html" class="back-button">← Back to Products</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #fafafa 0%, #e8e8e8 100%);">
+                    <span class="product-icon">🤍</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Unscented Natural Sugar Scrub</h1>
+                    <p class="product-price">$30.99</p>
+
+                    <div class="product-detail-description">
+                        <h3>Description</h3>
+                        <p>
+                            Experience pure, gentle exfoliation with our Unscented Natural Sugar Scrub, designed for
+                            sensitive melanin-rich skin that deserves effective care without fragrances. This hypoallergenic
+                            formula combines fine organic sugar crystals with nourishing organic oils to buff away dead
+                            skin cells, reduce hyperpigmentation, and reveal smooth, glowing skin underneath.
+                        </p>
+                        <p>
+                            Perfect for those with allergies, sensitivities, pregnant women, or anyone who prefers unscented
+                            products, this gentle scrub delivers all the benefits of exfoliation without essential oils or
+                            fragrances. The natural, subtle aroma of organic butters and oils is all you'll experience while
+                            the formula works to even out skin tone, prevent ingrown hairs, and maintain your skin's natural
+                            moisture barrier. Ideal for use in scent-free environments or as a base before applying your
+                            favorite perfume.
+                        </p>
+                    </div>
+
+                    <button class="add-to-cart" style="max-width: 300px;" onclick="addToCart('Unscented Natural Sugar Scrub', 30.99)">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="ingredients-section">
+                <h3>🌿 Pure Ingredients</h3>
+                <ul>
+                    <li>Organic Cane Sugar (Fine Grain)</li>
+                    <li>Organic Coconut Oil (Virgin, Cold-Pressed)</li>
+                    <li>Organic Shea Butter (Unrefined)</li>
+                    <li>Organic Jojoba Oil</li>
+                    <li>Organic Sweet Almond Oil</li>
+                    <li>Vitamin E Oil (Natural Tocopherol)</li>
+                    <li>Organic Cocoa Butter</li>
+                    <li>Arrowroot Powder (for smooth texture)</li>
+                </ul>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Proven Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Gentle Exfoliation:</strong> Fine sugar crystals remove dead skin cells without irritation, perfect for sensitive melanin-rich skin</li>
+                    <li><strong>Hypoallergenic Formula:</strong> Free from essential oils and fragrances, safe for allergies, sensitivities, and pregnancy</li>
+                    <li><strong>Fades Hyperpigmentation:</strong> Regular exfoliation speeds up cell turnover, helping to fade dark spots and even skin tone</li>
+                    <li><strong>Prevents Ingrown Hairs:</strong> Ideal for exfoliating before and after shaving to prevent razor bumps and ingrown hairs</li>
+                    <li><strong>Deep Moisturization:</strong> Nourishing oils prevent dryness and ashiness after exfoliation, keeping darker skin hydrated</li>
+                    <li><strong>Improves Texture:</strong> Smooths rough patches and creates even, soft skin surface across all areas of the body</li>
+                    <li><strong>Non-Comedogenic:</strong> Won't clog pores despite rich oils, suitable for acne-prone melanin-rich skin</li>
+                    <li><strong>Fragrance-Free Versatility:</strong> Perfect base for layering with perfumes or use in scent-sensitive environments</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Sensitive Skin Routine:</strong> Use 2-3 times weekly on wet skin in the shower. Apply gently
+                    in circular motions - there's no need for aggressive scrubbing. The fine sugar crystals are effective
+                    without harsh pressure. Focus on areas with hyperpigmentation, rough texture, or dryness. Rinse thoroughly.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Pre-Shaving Prep:</strong> Exfoliate 24 hours before shaving or waxing to lift trapped hairs
+                    and prevent ingrown hairs. The gentle formula won't irritate sensitive areas. Can also be used on face
+                    for gentle facial exfoliation. Follow with our Unscented Pure Body Butter for complete fragrance-free
+                    skincare routine.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every jar of Deja's Butters is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only certified organic ingredients specifically chosen to enhance and protect
+                    melanin-rich skin. Our products are formulated with darker skin tones in mind, addressing concerns like
+                    hyperpigmentation and ashiness while bringing out your natural glow. We never test on animals and are
+                    committed to sustainable and ethical sourcing practices. Our products are free from parabens, sulfates,
+                    synthetic fragrances, and artificial colors. What you see on the label is what you get - pure, natural
+                    goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

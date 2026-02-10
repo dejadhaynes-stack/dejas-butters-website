@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coconut Paradise Sugar Scrub - Deja's Butters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Deja's Butters</h1>
+                    <p class="tagline">Pure. Organic. Natural. | Black-Owned 👑</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#" class="cart-icon" onclick="toggleCart()">
+                        🛒 Cart (<span id="cart-count">0</span>)
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="index.html" class="back-button">← Back to Products</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #fffef2 0%, #f5deb3 100%);">
+                    <span class="product-icon">🥥</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Coconut Paradise Sugar Scrub</h1>
+                    <p class="product-price">$31.99</p>
+
+                    <div class="product-detail-description">
+                        <h3>Description</h3>
+                        <p>
+                            Escape to the tropics with our Coconut Paradise Sugar Scrub, a luxurious exfoliating treatment
+                            that transports your senses while revealing silky-smooth melanin-rich skin. Made with pure
+                            virgin coconut oil and fine organic sugar crystals, this tropical-scented scrub gently buffs
+                            away dead skin cells while deeply nourishing and hydrating your skin.
+                        </p>
+                        <p>
+                            Coconut oil is a miracle ingredient for darker skin tones, providing intense moisture without
+                            clogging pores or leaving a greasy residue. This scrub not only exfoliates but also delivers
+                            antibacterial benefits to prevent breakouts and promote clearer skin. The natural, sweet coconut
+                            aroma creates a spa-like escape right in your shower, while the nourishing formula ensures your
+                            melanin-rich skin emerges smooth, glowing, and perfectly hydrated. Say goodbye to ashiness and
+                            hello to paradise.
+                        </p>
+                    </div>
+
+                    <button class="add-to-cart" style="max-width: 300px;" onclick="addToCart('Coconut Paradise Sugar Scrub', 31.99)">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="ingredients-section">
+                <h3>🌿 Pure Ingredients</h3>
+                <ul>
+                    <li>Organic Cane Sugar (Fine Grain)</li>
+                    <li>Organic Coconut Oil (Virgin, Cold-Pressed)</li>
+                    <li>Organic Shea Butter (Unrefined)</li>
+                    <li>Natural Coconut Extract</li>
+                    <li>Organic Sweet Almond Oil</li>
+                    <li>Vitamin E Oil (Natural Tocopherol)</li>
+                    <li>Organic Jojoba Oil</li>
+                    <li>Coconut Milk Powder</li>
+                </ul>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Proven Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Deep Exfoliation:</strong> Fine sugar crystals gently remove dead skin cells and dull layer, revealing radiant melanin-rich skin underneath</li>
+                    <li><strong>Intense Hydration:</strong> Virgin coconut oil penetrates deeply to moisturize without leaving white cast or greasy feel on darker skin</li>
+                    <li><strong>Antibacterial Protection:</strong> Coconut's lauric acid fights acne-causing bacteria, preventing breakouts and promoting clearer skin</li>
+                    <li><strong>Fades Dark Spots:</strong> Regular exfoliation combined with nourishing oils helps reduce hyperpigmentation and even skin tone</li>
+                    <li><strong>Anti-Aging Benefits:</strong> Rich in antioxidants that protect melanin-rich skin from environmental damage and premature aging</li>
+                    <li><strong>Prevents Ingrown Hairs:</strong> Exfoliates and moisturizes to prevent razor bumps and ingrown hairs after shaving</li>
+                    <li><strong>Soothes Inflammation:</strong> Natural anti-inflammatory properties calm irritated skin and reduce redness</li>
+                    <li><strong>Tropical Aromatherapy:</strong> Sweet coconut scent reduces stress, uplifts mood, and creates a vacation-like sensory experience</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Tropical Escape Routine:</strong> Use 2-3 times weekly in the shower on damp skin. Scoop out
+                    a generous amount and massage in circular motions all over your body, taking time to breathe in the
+                    tropical coconut aroma. Focus on rough areas like elbows, knees, and heels. Rinse with warm water.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Summer Ready Prep:</strong> Perfect for preparing skin before beach vacations or summer events.
+                    The gentle exfoliation creates a smooth canvas for self-tanner application and helps achieve an even,
+                    natural-looking glow. Follow with body butter to lock in moisture and keep your melanin-rich skin
+                    looking radiant all season long.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every jar of Deja's Butters is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only certified organic ingredients specifically chosen to enhance and protect
+                    melanin-rich skin. Our products are formulated with darker skin tones in mind, addressing concerns like
+                    hyperpigmentation and ashiness while bringing out your natural glow. We never test on animals and are
+                    committed to sustainable and ethical sourcing practices. Our products are free from parabens, sulfates,
+                    synthetic fragrances, and artificial colors. What you see on the label is what you get - pure, natural
+                    goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

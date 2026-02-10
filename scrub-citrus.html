@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citrus Glow Sugar Scrub - Deja's Butters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Deja's Butters</h1>
+                    <p class="tagline">Pure. Organic. Natural. | Black-Owned 👑</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#" class="cart-icon" onclick="toggleCart()">
+                        🛒 Cart (<span id="cart-count">0</span>)
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="index.html" class="back-button">← Back to Products</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #fffaf0 0%, #ffb347 100%);">
+                    <span class="product-icon">🍋</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Citrus Glow Sugar Scrub</h1>
+                    <p class="product-price">$34.99</p>
+
+                    <div class="product-detail-description">
+                        <h3>Description</h3>
+                        <p>
+                            Brighten and energize your melanin-rich skin with our Citrus Glow Sugar Scrub, a vitamin-packed
+                            exfoliating treatment that reveals your natural radiance. Infused with a uplifting blend of
+                            orange, lemon, and grapefruit essential oils, this scrub buffs away dead skin cells while
+                            delivering powerful brightening benefits specifically formulated for darker skin tones.
+                        </p>
+                        <p>
+                            The natural Vitamin C in citrus oils works to fade hyperpigmentation, dark spots, and acne scars
+                            while organic sugar crystals gently exfoliate without causing irritation. This refreshing scrub
+                            not only improves skin texture but also boosts circulation and collagen production, leaving your
+                            melanin-rich skin smoother, brighter, and absolutely glowing. The energizing citrus scent transforms
+                            your shower into a spa-like escape.
+                        </p>
+                    </div>
+
+                    <button class="add-to-cart" style="max-width: 300px;" onclick="addToCart('Citrus Glow Sugar Scrub', 34.99)">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="ingredients-section">
+                <h3>🌿 Pure Ingredients</h3>
+                <ul>
+                    <li>Organic Cane Sugar (Fine Grain)</li>
+                    <li>Organic Coconut Oil (Virgin, Cold-Pressed)</li>
+                    <li>Sweet Orange Essential Oil (Citrus sinensis)</li>
+                    <li>Lemon Essential Oil (Citrus limon)</li>
+                    <li>Grapefruit Essential Oil (Citrus paradisi)</li>
+                    <li>Organic Shea Butter (Unrefined)</li>
+                    <li>Vitamin E Oil (Natural Tocopherol)</li>
+                    <li>Organic Jojoba Oil</li>
+                </ul>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Proven Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Brightens Complexion:</strong> Vitamin C from citrus oils naturally lightens dark spots and evens out hyperpigmentation on melanin-rich skin</li>
+                    <li><strong>Gentle Exfoliation:</strong> Fine sugar crystals remove dead skin without harsh abrasion, revealing smooth, glowing skin underneath</li>
+                    <li><strong>Boosts Collagen:</strong> Citrus oils stimulate collagen production to improve elasticity and reduce fine lines and wrinkles</li>
+                    <li><strong>Fights Acne Scars:</strong> Natural acids help fade post-inflammatory hyperpigmentation from acne common in darker skin</li>
+                    <li><strong>Detoxifies Skin:</strong> Grapefruit oil removes toxins and impurities, promoting clearer, healthier-looking melanin-rich skin</li>
+                    <li><strong>Prevents Ingrown Hairs:</strong> Regular exfoliation lifts trapped hairs and smooths skin to prevent bumps after shaving</li>
+                    <li><strong>Energizing Aromatherapy:</strong> Uplifting citrus scent boosts mood, reduces stress, and increases energy levels</li>
+                    <li><strong>Enhances Absorption:</strong> Removes dead skin layer so moisturizers penetrate deeper, maximizing the benefits of your body butter</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Morning Glow Ritual:</strong> Use 2-3 times weekly in the shower on wet skin. Massage in circular
+                    motions, paying special attention to areas with dark spots or rough texture. Rinse with warm water and
+                    follow immediately with body butter to seal in moisture and enhance brightening effects.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Targeted Treatment:</strong> For stubborn dark spots or hyperpigmentation, gently exfoliate those
+                    areas 3-4 times weekly. The vitamin C and natural acids will help fade discoloration over time. Always
+                    follow with SPF during daytime as exfoliation increases sun sensitivity.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every jar of Deja's Butters is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only certified organic ingredients specifically chosen to enhance and protect
+                    melanin-rich skin. Our products are formulated with darker skin tones in mind, addressing concerns like
+                    hyperpigmentation and ashiness while bringing out your natural glow. We never test on animals and are
+                    committed to sustainable and ethical sourcing practices. Our products are free from parabens, sulfates,
+                    synthetic fragrances, and artificial colors. What you see on the label is what you get - pure, natural
+                    goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
