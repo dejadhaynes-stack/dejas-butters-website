@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: 'Georgia', 'Palatino', serif;
+    font-family: 'Montserrat', 'Georgia', sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-light);
@@ -29,7 +29,7 @@ body {
     padding: 0 20px;
 }
 
-/* Navigation */
+/* Header & Navigation */
 header {
     background: var(--white);
     box-shadow: var(--shadow);
@@ -38,61 +38,89 @@ header {
     z-index: 1000;
 }
 
-.navbar {
-    padding: 1rem 0;
+.header-top {
+    padding: 1.5rem 0 1rem;
+    background: linear-gradient(135deg, rgba(125, 155, 118, 0.05) 0%, rgba(212, 165, 116, 0.05) 100%);
 }
 
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.logo-section {
+    text-align: center;
 }
 
-.logo h1 {
+.brand-name {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 3.5rem;
+    font-weight: 300;
     color: var(--primary-color);
-    font-size: 2rem;
-    font-family: 'Georgia', serif;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 3px;
+    text-transform: none;
 }
 
-.tagline {
+.brand-tagline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
     color: var(--secondary-color);
-    font-size: 0.9rem;
-    font-style: italic;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
-.nav-links {
+/* Horizontal Tab Navigation */
+.nav-tabs {
     display: flex;
-    list-style: none;
-    gap: 2rem;
+    justify-content: center;
     align-items: center;
+    background: var(--white);
+    border-top: 1px solid rgba(125, 155, 118, 0.2);
+    padding: 0;
 }
 
-.nav-links a {
+.nav-tab {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+    padding: 1.2rem 2rem;
     text-decoration: none;
     color: var(--text-dark);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
     font-weight: 500;
-    transition: color 0.3s;
-    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-tab:hover {
     color: var(--primary-color);
+    background: rgba(125, 155, 118, 0.05);
+    border-bottom-color: var(--primary-color);
 }
 
-.cart-icon {
-    cursor: pointer;
-    padding: 0.5rem 1rem;
+.nav-tab.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+    background: rgba(125, 155, 118, 0.08);
+    font-weight: 600;
+}
+
+.cart-tab {
     background: var(--primary-color);
     color: var(--white) !important;
-    border-radius: 25px;
-    transition: background 0.3s;
+    border-radius: 0;
+    max-width: 200px;
 }
 
-.cart-icon:hover {
-    background: var(--secondary-color);
+.cart-tab:hover {
+    background: var(--secondary-color) !important;
+    border-bottom-color: transparent !important;
+}
+
+.cart-icon-minimal {
+    font-size: 1.1rem;
+    margin-right: 0.3rem;
 }
 
 /* Hero Section */
