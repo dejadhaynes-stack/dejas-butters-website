@@ -207,6 +207,54 @@ header {
     box-shadow: var(--shadow);
 }
 
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 250px;
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+}
+
+.dropdown-content a {
+    color: var(--text-dark);
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
 .tab-button.active {
     background: var(--primary-color);
     color: var(--white);
@@ -725,6 +773,19 @@ footer {
     left: 0;
     color: var(--primary-color);
     font-weight: bold;
+}
+
+.usage-section {
+    margin-top: 2rem;
+}
+
+.usage-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.usage-section p {
+    margin-bottom: 1rem;
 }
 
 .back-button {

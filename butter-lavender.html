@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavender Dreams Body Butter - Deja's Butters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Deja's Butters</h1>
+                    <p class="tagline">Pure. Organic. Natural. | Black-Owned 👑</p>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#" class="cart-icon" onclick="toggleCart()">
+                        🛒 Cart (<span id="cart-count">0</span>)
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="index.html" class="back-button">← Back to Products</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #e6e6fa 0%, #9370db 100%);">
+                    <span class="product-icon">💜</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Lavender Dreams Body Butter</h1>
+                    <p class="product-price">$28.99</p>
+
+                    <div class="product-detail-description">
+                        <h3>Description</h3>
+                        <p>
+                            Drift into tranquility with our Lavender Dreams Body Butter, a luxurious blend crafted
+                            specifically for melanin-rich skin. Infused with pure lavender essential oil harvested
+                            from organic farms in Provence, France, this deeply nourishing butter melts into your
+                            skin like silk, leaving it soft, supple, and beautifully scented.
+                        </p>
+                        <p>
+                            Perfect for evening routines, this calming formula helps reduce the appearance of dark
+                            spots and hyperpigmentation while promoting relaxation and better sleep. The combination
+                            of shea butter, coconut oil, and lavender creates the ultimate self-care experience for
+                            your mind, body, and soul.
+                        </p>
+                    </div>
+
+                    <button class="add-to-cart" id="add-to-cart-btn" style="max-width: 300px;" onclick="addToCart('Lavender Dreams Body Butter', 28.99)">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="ingredients-section">
+                <h3>🌿 Pure Ingredients</h3>
+                <ul>
+                    <li>Organic Shea Butter (Unrefined)</li>
+                    <li>Organic Coconut Oil (Virgin, Cold-Pressed)</li>
+                    <li>Organic Lavender Essential Oil (Lavandula angustifolia)</li>
+                    <li>Vitamin E Oil (Natural Tocopherol)</li>
+                    <li>Organic Jojoba Oil</li>
+                    <li>Organic Cocoa Butter</li>
+                    <li>Arrowroot Powder (for smooth absorption)</li>
+                </ul>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Proven Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Reduces Hyperpigmentation:</strong> Lavender oil's natural compounds help fade dark spots and even out skin tone over time</li>
+                    <li><strong>Deep Hydration:</strong> Shea butter penetrates deeply to moisturize without leaving a greasy residue or white cast on darker skin</li>
+                    <li><strong>Anti-Inflammatory:</strong> Soothes irritated skin, eczema, and reduces redness - perfect for sensitive melanin-rich skin</li>
+                    <li><strong>Promotes Cell Regeneration:</strong> Vitamin E and essential fatty acids help repair damaged skin cells and improve elasticity</li>
+                    <li><strong>Prevents Ashiness:</strong> Long-lasting moisture keeps skin glowing and hydrated for 24+ hours</li>
+                    <li><strong>Aromatherapy Benefits:</strong> Lavender scent reduces stress, promotes relaxation, and improves sleep quality</li>
+                    <li><strong>Antioxidant Protection:</strong> Protects melanin-rich skin from environmental stressors and premature aging</li>
+                    <li><strong>Non-Comedogenic:</strong> Won't clog pores, making it safe for all skin types including acne-prone skin</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Daily Routine:</strong> Apply a small amount (dime to quarter-sized) to slightly damp skin
+                    after showering. Massage in circular motions, focusing on dry areas, elbows, knees, and any areas
+                    with hyperpigmentation. Use morning and night for best results.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Evening Ritual:</strong> Apply before bed as part of your nighttime self-care routine. The
+                    lavender scent will help you relax and prepare for restful sleep while the butter works overnight
+                    to repair and nourish your skin.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every jar of Deja's Butters is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only certified organic ingredients specifically chosen to enhance and protect
+                    melanin-rich skin. Our products are formulated with darker skin tones in mind, addressing concerns like
+                    hyperpigmentation and ashiness while bringing out your natural glow. We never test on animals and are
+                    committed to sustainable and ethical sourcing practices. Our products are free from parabens, sulfates,
+                    synthetic fragrances, and artificial colors. What you see on the label is what you get - pure, natural
+                    goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -41,17 +41,43 @@
             <h2 class="section-title">Our Signature Collection</h2>
             <p class="section-subtitle">Each butter is carefully crafted to enhance and protect melanin-rich skin</p>
 
-            <!-- Tabs Navigation -->
+            <!-- Dropdown Navigation -->
             <div class="tabs-container">
                 <div class="tab-buttons">
-                    <button class="tab-button active" onclick="switchTab('body-butters')">Body Butters</button>
-                    <button class="tab-button" onclick="switchTab('body-scrubs')">Body Scrubs</button>
-                    <button class="tab-button" onclick="switchTab('membership')">Membership</button>
+                    <div class="dropdown">
+                        <button class="tab-button dropdown-button">
+                            Body Butters ▼
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="butter-lavender.html">Lavender Dreams</a>
+                            <a href="butter-vanilla.html">Vanilla Bliss</a>
+                            <a href="butter-unscented.html">Unscented Pure</a>
+                            <a href="butter-rose.html">Rose Garden</a>
+                            <a href="butter-citrus.html">Citrus Burst</a>
+                            <a href="butter-eucalyptus.html">Eucalyptus Mint</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="tab-button dropdown-button">
+                            Body Scrubs ▼
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="scrub-peppermint.html">Peppermint Refresh</a>
+                            <a href="scrub-citrus.html">Citrus Glow</a>
+                            <a href="scrub-lavender.html">Lavender Calm</a>
+                            <a href="scrub-coconut.html">Coconut Paradise</a>
+                            <a href="scrub-coffee.html">Coffee Awakening</a>
+                            <a href="scrub-unscented.html">Unscented Natural</a>
+                        </div>
+                    </div>
+
+                    <button class="tab-button active" onclick="switchTab('membership')">Membership</button>
                 </div>
 
-                <!-- Body Butters Tab -->
-                <div id="body-butters" class="tab-content active">
-                    <div class="products-grid">
+                <!-- Membership Tab -->
+                <div id="membership" class="tab-content active">
+                    <div class="membership-content">
                 <div class="product-card" data-product="golden-glow-shea">
                     <div class="product-image" style="background: linear-gradient(135deg, #f5e6d3 0%, #d4a574 100%);">
                         <span class="product-icon">🌟</span>
