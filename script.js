@@ -1,3 +1,30 @@
+// Tab Switching
+function switchTab(tabId) {
+    // Hide all tab content
+    const allTabContent = document.querySelectorAll('.tab-content');
+    allTabContent.forEach(content => {
+        content.classList.remove('active');
+    });
+
+    // Remove active class from all buttons
+    const allTabButtons = document.querySelectorAll('.tab-button');
+    allTabButtons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // Show selected tab content
+    const selectedTab = document.getElementById(tabId);
+    if (selectedTab) {
+        selectedTab.classList.add('active');
+    }
+
+    // Add active class to clicked button
+    const clickedButton = event.target;
+    if (clickedButton) {
+        clickedButton.classList.add('active');
+    }
+}
+
 // Shopping Cart
 let cart = JSON.parse(localStorage.getItem('dejasButtersCart')) || [];
 

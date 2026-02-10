@@ -41,7 +41,17 @@
             <h2 class="section-title">Our Signature Collection</h2>
             <p class="section-subtitle">Each butter is carefully crafted to enhance and protect melanin-rich skin</p>
 
-            <div class="products-grid">
+            <!-- Tabs Navigation -->
+            <div class="tabs-container">
+                <div class="tab-buttons">
+                    <button class="tab-button active" onclick="switchTab('body-butters')">Body Butters</button>
+                    <button class="tab-button" onclick="switchTab('body-scrubs')">Body Scrubs</button>
+                    <button class="tab-button" onclick="switchTab('membership')">Membership</button>
+                </div>
+
+                <!-- Body Butters Tab -->
+                <div id="body-butters" class="tab-content active">
+                    <div class="products-grid">
                 <div class="product-card" data-product="golden-glow-shea">
                     <div class="product-image" style="background: linear-gradient(135deg, #f5e6d3 0%, #d4a574 100%);">
                         <span class="product-icon">🌟</span>
@@ -141,6 +151,151 @@
                     <a href="product.html?id=natures-aromatherapy-blend" class="view-details">View Details</a>
                 </div>
             </div>
+        </div>
+        <!-- End Body Butters Tab -->
+
+        <!-- Body Scrubs Tab -->
+        <div id="body-scrubs" class="tab-content">
+            <div class="products-grid">
+                <div class="product-card" data-product="honey-glow-scrub">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);">
+                        <span class="product-icon">🍯</span>
+                    </div>
+                    <h3>Honey Glow Scrub</h3>
+                    <p class="product-description">Raw honey and brown sugar scrub that exfoliates and illuminates</p>
+                    <p class="product-price">$32.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Honey Glow Scrub', 32.99)">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-product="coffee-awakening-scrub">
+                    <div class="product-image" style="background: linear-gradient(135deg, #6f4e37 0%, #a0522d 100%);">
+                        <span class="product-icon">☕</span>
+                    </div>
+                    <h3>Coffee Awakening Scrub</h3>
+                    <p class="product-description">Organic coffee grounds to reduce dark spots and cellulite</p>
+                    <p class="product-price">$34.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Coffee Awakening Scrub', 34.99)">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-product="brown-sugar-vanilla-scrub">
+                    <div class="product-image" style="background: linear-gradient(135deg, #d2691e 0%, #cd853f 100%);">
+                        <span class="product-icon">🍬</span>
+                    </div>
+                    <h3>Brown Sugar Vanilla Scrub</h3>
+                    <p class="product-description">Sweet vanilla scent with gentle brown sugar exfoliation</p>
+                    <p class="product-price">$31.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Brown Sugar Vanilla Scrub', 31.99)">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-product="sea-salt-detox-scrub">
+                    <div class="product-image" style="background: linear-gradient(135deg, #40e0d0 0%, #48d1cc 100%);">
+                        <span class="product-icon">🌊</span>
+                    </div>
+                    <h3>Sea Salt Detox Scrub</h3>
+                    <p class="product-description">Mineral-rich sea salt that detoxifies and revitalizes</p>
+                    <p class="product-price">$35.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Sea Salt Detox Scrub', 35.99)">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-product="turmeric-brightening-scrub">
+                    <div class="product-image" style="background: linear-gradient(135deg, #ffa500 0%, #ff8c00 100%);">
+                        <span class="product-icon">✨</span>
+                    </div>
+                    <h3>Turmeric Brightening Scrub</h3>
+                    <p class="product-description">Turmeric and oatmeal to brighten and even skin tone</p>
+                    <p class="product-price">$36.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Turmeric Brightening Scrub', 36.99)">Add to Cart</button>
+                </div>
+
+                <div class="product-card" data-product="charcoal-purifying-scrub">
+                    <div class="product-image" style="background: linear-gradient(135deg, #36454f 0%, #708090 100%);">
+                        <span class="product-icon">🖤</span>
+                    </div>
+                    <h3>Charcoal Purifying Scrub</h3>
+                    <p class="product-description">Activated charcoal to draw out impurities and toxins</p>
+                    <p class="product-price">$37.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Charcoal Purifying Scrub', 37.99)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- End Body Scrubs Tab -->
+
+        <!-- Membership Tab -->
+        <div id="membership" class="tab-content">
+            <div class="membership-content">
+                <h2 class="membership-title">Join the Deja's Butters VIP Club 👑</h2>
+                <p class="membership-subtitle">Exclusive perks for our most loyal customers</p>
+
+                <div class="membership-tiers">
+                    <div class="membership-tier">
+                        <div class="tier-header" style="background: linear-gradient(135deg, #cd7f32 0%, #b8860b 100%);">
+                            <h3>Bronze Glow</h3>
+                            <p class="tier-price">$15/month</p>
+                        </div>
+                        <div class="tier-benefits">
+                            <ul>
+                                <li>✓ 10% off all purchases</li>
+                                <li>✓ Free shipping on orders over $50</li>
+                                <li>✓ Early access to new products</li>
+                                <li>✓ Birthday month special gift</li>
+                                <li>✓ Monthly skincare tips newsletter</li>
+                            </ul>
+                            <button class="membership-button" onclick="alert('Membership coming soon! Email contact@dejasbutters.com to join the waitlist.')">Join Bronze</button>
+                        </div>
+                    </div>
+
+                    <div class="membership-tier featured">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="tier-header" style="background: linear-gradient(135deg, #c0c0c0 0%, #d3d3d3 100%);">
+                            <h3>Silver Radiance</h3>
+                            <p class="tier-price">$25/month</p>
+                        </div>
+                        <div class="tier-benefits">
+                            <ul>
+                                <li>✓ 15% off all purchases</li>
+                                <li>✓ FREE shipping on all orders</li>
+                                <li>✓ Early access to new products</li>
+                                <li>✓ Birthday month special gift</li>
+                                <li>✓ Monthly skincare tips newsletter</li>
+                                <li>✓ Quarterly surprise sample box</li>
+                                <li>✓ Access to members-only products</li>
+                            </ul>
+                            <button class="membership-button" onclick="alert('Membership coming soon! Email contact@dejasbutters.com to join the waitlist.')">Join Silver</button>
+                        </div>
+                    </div>
+
+                    <div class="membership-tier">
+                        <div class="tier-header" style="background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);">
+                            <h3>Gold Essence</h3>
+                            <p class="tier-price">$40/month</p>
+                        </div>
+                        <div class="tier-benefits">
+                            <ul>
+                                <li>✓ 20% off all purchases</li>
+                                <li>✓ FREE shipping on all orders</li>
+                                <li>✓ First access to limited editions</li>
+                                <li>✓ Birthday month special gift</li>
+                                <li>✓ Monthly skincare tips newsletter</li>
+                                <li>✓ Monthly full-size product</li>
+                                <li>✓ Access to members-only products</li>
+                                <li>✓ Private virtual skincare consultations</li>
+                                <li>✓ VIP customer service line</li>
+                            </ul>
+                            <button class="membership-button" onclick="alert('Membership coming soon! Email contact@dejasbutters.com to join the waitlist.')">Join Gold</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="membership-note">
+                    <p>✨ All memberships support Black-owned business and our community initiatives</p>
+                    <p>💚 Cancel anytime, no questions asked</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Membership Tab -->
+
+        </div>
+        <!-- End Tabs Container -->
         </div>
     </section>
 
