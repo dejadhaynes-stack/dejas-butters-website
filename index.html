@@ -19,6 +19,54 @@
         </div>
         <nav class="nav-tabs">
             <a href="index.html" class="nav-tab active">Home</a>
+
+            <div class="dropdown nav-dropdown">
+                <button class="nav-tab dropdown-button">
+                    Body Butters ▼
+                </button>
+                <div class="dropdown-content">
+                    <a href="butter-shea.html">Shea Butter</a>
+                    <a href="butter-cocoa.html">Cocoa Butter</a>
+                    <a href="butter-coconut.html">Coconut Oil</a>
+                    <a href="butter-avocado.html">Avocado Butter</a>
+                    <a href="butter-aloe.html">Aloe Vera Butter</a>
+                    <a href="butter-mango.html">Mango Butter</a>
+                    <a href="butter-olive.html">Olive Oil</a>
+                    <a href="butter-collagen.html">Collagen Peptides</a>
+                    <a href="butter-essential.html">Essential Oils Blend</a>
+                </div>
+            </div>
+
+            <div class="dropdown nav-dropdown">
+                <button class="nav-tab dropdown-button">
+                    Body Scrubs ▼
+                </button>
+                <div class="dropdown-content">
+                    <a href="scrub-peppermint.html">Peppermint Refresh</a>
+                    <a href="scrub-citrus.html">Citrus Glow</a>
+                    <a href="scrub-lavender.html">Lavender Calm</a>
+                    <a href="scrub-coconut.html">Coconut Paradise</a>
+                    <a href="scrub-coffee.html">Coffee Awakening</a>
+                    <a href="scrub-unscented.html">Unscented Natural</a>
+                </div>
+            </div>
+
+            <div class="dropdown nav-dropdown">
+                <button class="nav-tab dropdown-button">
+                    Bundles ▼
+                </button>
+                <div class="dropdown-content">
+                    <a href="#bundles" onclick="switchTab('bundles')">✨ Glow Getter Bundle</a>
+                    <a href="#bundles" onclick="switchTab('bundles')">🌸 Self-Care Sunday</a>
+                    <a href="#bundles" onclick="switchTab('bundles')">👑 Melanin Magic Trio</a>
+                    <a href="#bundles" onclick="switchTab('bundles')">🌴 Tropical Escape</a>
+                    <a href="#bundles" onclick="switchTab('bundles')">💕 Date Night Ready</a>
+                    <a href="#bundles" onclick="switchTab('bundles')">⏰ Age-Defying Essentials</a>
+                </div>
+            </div>
+
+            <button class="nav-tab" onclick="switchTab('membership')">Membership</button>
+
             <a href="about.html" class="nav-tab">About Us</a>
             <a href="faq.html" class="nav-tab">FAQ</a>
             <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
@@ -42,57 +90,7 @@
             <h2 class="section-title">Our Signature Collection</h2>
             <p class="section-subtitle">Each butter is carefully crafted to enhance and protect melanin-rich skin</p>
 
-            <!-- Dropdown Navigation -->
             <div class="tabs-container">
-                <div class="tab-buttons">
-                    <div class="dropdown">
-                        <button class="tab-button dropdown-button">
-                            Body Butters ▼
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="butter-shea.html">Shea Butter</a>
-                            <a href="butter-cocoa.html">Cocoa Butter</a>
-                            <a href="butter-coconut.html">Coconut Oil</a>
-                            <a href="butter-avocado.html">Avocado Butter</a>
-                            <a href="butter-aloe.html">Aloe Vera Butter</a>
-                            <a href="butter-mango.html">Mango Butter</a>
-                            <a href="butter-olive.html">Olive Oil</a>
-                            <a href="butter-collagen.html">Collagen Peptides</a>
-                            <a href="butter-essential.html">Essential Oils Blend</a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown">
-                        <button class="tab-button dropdown-button">
-                            Body Scrubs ▼
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="scrub-peppermint.html">Peppermint Refresh</a>
-                            <a href="scrub-citrus.html">Citrus Glow</a>
-                            <a href="scrub-lavender.html">Lavender Calm</a>
-                            <a href="scrub-coconut.html">Coconut Paradise</a>
-                            <a href="scrub-coffee.html">Coffee Awakening</a>
-                            <a href="scrub-unscented.html">Unscented Natural</a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown">
-                        <button class="tab-button dropdown-button">
-                            Bundles ▼
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#bundles" onclick="switchTab('bundles')">✨ Glow Getter Bundle</a>
-                            <a href="#bundles" onclick="switchTab('bundles')">🌸 Self-Care Sunday</a>
-                            <a href="#bundles" onclick="switchTab('bundles')">👑 Melanin Magic Trio</a>
-                            <a href="#bundles" onclick="switchTab('bundles')">🌴 Tropical Escape</a>
-                            <a href="#bundles" onclick="switchTab('bundles')">💕 Date Night Ready</a>
-                            <a href="#bundles" onclick="switchTab('bundles')">⏰ Age-Defying Essentials</a>
-                        </div>
-                    </div>
-
-                    <button class="tab-button active" onclick="switchTab('membership')">Membership</button>
-                </div>
-
                 <!-- Body Butters Section -->
                 <div id="body-butters" class="tab-content active">
                     <div class="products-grid">

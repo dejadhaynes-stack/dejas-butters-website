@@ -283,6 +283,27 @@ header {
     animation: fadeIn 0.3s ease;
 }
 
+/* Navigation Dropdown Styles */
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-dropdown .dropdown-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-dropdown .dropdown-content {
+    font-size: 0.9rem;
+}
+
+.nav-dropdown .dropdown-content a {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.95rem;
+}
+
 .tab-button.active {
     background: var(--primary-color);
     color: var(--white);
