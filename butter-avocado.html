@@ -19,6 +19,63 @@
         </div>
         <nav class="nav-tabs">
             <a href="index.html" class="nav-tab">Home</a>
+
+            <div class="dropdown nav-dropdown">
+                <a href="body-butters.html" class="nav-tab dropdown-button">
+                    Body Butters ▼
+                </a>
+                <div class="dropdown-content">
+                    <a href="butter-shea.html">Shea Butter</a>
+                    <a href="butter-cocoa.html">Cocoa Butter</a>
+                    <a href="butter-coconut.html">Coconut Oil</a>
+                    <a href="butter-avocado.html">Avocado Butter</a>
+                    <a href="butter-aloe.html">Aloe Vera Butter</a>
+                    <a href="butter-mango.html">Mango Butter</a>
+                    <a href="butter-olive.html">Olive Oil</a>
+                    <a href="butter-collagen.html">Collagen Peptides</a>
+                    <a href="butter-essential.html">Essential Oils Blend</a>
+                </div>
+            </div>
+
+            <div class="dropdown nav-dropdown">
+                <a href="body-scrubs.html" class="nav-tab dropdown-button">
+                    Body Scrubs ▼
+                </a>
+                <div class="dropdown-content">
+                    <a href="scrub-peppermint.html">Peppermint Refresh</a>
+                    <a href="scrub-citrus.html">Citrus Glow</a>
+                    <a href="scrub-lavender.html">Lavender Calm</a>
+                    <a href="scrub-coconut.html">Coconut Paradise</a>
+                    <a href="scrub-coffee.html">Coffee Awakening</a>
+                    <a href="scrub-unscented.html">Unscented Natural</a>
+                </div>
+            </div>
+
+            <div class="dropdown nav-dropdown">
+                <a href="bundles.html" class="nav-tab dropdown-button">
+                    Bundles ▼
+                </a>
+                <div class="dropdown-content">
+                    <a href="bundle-glow-getter.html">Glow Getter Bundle</a>
+                    <a href="bundle-self-care.html">Self-Care Sunday</a>
+                    <a href="bundle-melanin-magic.html">Melanin Magic Trio</a>
+                    <a href="bundle-tropical.html">Tropical Escape</a>
+                    <a href="bundle-date-night.html">Date Night Ready</a>
+                    <a href="bundle-age-defying.html">Age-Defying Essentials</a>
+                </div>
+            </div>
+
+            <div class="dropdown nav-dropdown">
+                <a href="membership.html" class="nav-tab dropdown-button">
+                    Membership ▼
+                </a>
+                <div class="dropdown-content">
+                    <a href="membership-bronze.html">Bronze Glow</a>
+                    <a href="membership-silver.html">Silver Radiance</a>
+                    <a href="membership-gold.html">Gold Essence</a>
+                </div>
+            </div>
+
             <a href="about.html" class="nav-tab">About Us</a>
             <a href="faq.html" class="nav-tab">FAQ</a>
             <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
@@ -38,7 +95,8 @@
 
                 <div class="product-detail-info">
                     <h1>Avocado Butter Body Butter</h1>
-                    <p class="product-price">Starting at $29.99</p>
+                    <p class="product-price">$28.99</p>
+                    <p style="color: #666; margin-top: -0.5rem; font-size: 0.9rem;">Pure unscented base</p>
 
                     <div class="product-detail-description">
                         <h3>Description</h3>
@@ -56,22 +114,17 @@
                         </p>
                     </div>
 
+                    <button class="add-to-cart" onclick="addToCart('Avocado Butter Body Butter (Unscented)', 28.99)" style="width: 100%; padding: 1rem; margin-top: 1.5rem; font-size: 1.1rem;">Add Unscented to Cart - $28.99</button>
+
                     <div class="ingredients-section" style="margin-top: 2rem;">
                         <h3>🌸 Available Fragrances</h3>
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
-                            <a href="butter-rose.html" class="fragrance-option">
-                                <div style="padding: 1.5rem; border: 2px solid #ffe4e1; border-radius: 10px; text-align: center; transition: all 0.3s;">
-                                    <span style="font-size: 2rem;">🌹</span>
-                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Rose Garden</h4>
-                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Luxurious & Anti-Aging</p>
-                                </div>
+                        <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;">Upgrade your butter with our premium fragrances (+$2.00 each)</p>
+                        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1rem;">
+                            <a href="butter-rose.html" class="fragrance-button-small">
+                                🌹 Rose Garden
                             </a>
-                            <a href="butter-lavender.html" class="fragrance-option">
-                                <div style="padding: 1.5rem; border: 2px solid #e6e6fa; border-radius: 10px; text-align: center; transition: all 0.3s;">
-                                    <span style="font-size: 2rem;">💜</span>
-                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Lavender Dreams</h4>
-                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Calming & Rejuvenating</p>
-                                </div>
+                            <a href="butter-lavender.html" class="fragrance-button-small">
+                                💜 Lavender Dreams
                             </a>
                         </div>
                     </div>
@@ -153,13 +206,23 @@
 
     <script src="script.js"></script>
     <style>
-        .fragrance-option {
+        .fragrance-button-small {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: white;
+            border: 2px solid var(--primary-color);
+            border-radius: 25px;
+            color: var(--primary-color);
             text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
         }
-        .fragrance-option > div:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            border-color: var(--primary-color);
+        .fragrance-button-small:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(125, 155, 118, 0.3);
         }
     </style>
 </body>
