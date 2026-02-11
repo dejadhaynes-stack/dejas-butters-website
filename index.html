@@ -76,6 +76,8 @@
                         </div>
                     </div>
 
+                    <button class="tab-button" onclick="switchTab('bundles')">Bundles</button>
+
                     <button class="tab-button active" onclick="switchTab('membership')">Membership</button>
                 </div>
 
@@ -240,6 +242,147 @@
             </div>
         </div>
         <!-- End Body Scrubs Tab -->
+
+        <!-- Bundles Tab -->
+        <div id="bundles" class="tab-content">
+            <div class="bundles-content">
+                <h2 class="bundles-title">Curated Bundles for Melanin-Rich Skin 💚</h2>
+                <p class="bundles-subtitle">Save when you bundle! Each package is thoughtfully curated for maximum benefits.</p>
+
+                <div class="bundles-grid">
+                    <div class="bundle-card">
+                        <div class="bundle-badge">BEST SELLER</div>
+                        <div class="bundle-header" style="background: linear-gradient(135deg, #f5e6d3 0%, #d4a574 100%);">
+                            <span class="bundle-icon">✨</span>
+                            <h3>Glow Getter Bundle</h3>
+                        </div>
+                        <div class="bundle-details">
+                            <p class="bundle-description">Your complete routine for radiant, glowing melanin-rich skin</p>
+                            <ul class="bundle-items">
+                                <li>🌰 Shea Butter Body Butter (Lavender Dreams)</li>
+                                <li>☕ Coffee Awakening Body Scrub</li>
+                                <li>💜 Bonus: Travel-size Lavender Oil</li>
+                            </ul>
+                            <div class="bundle-pricing">
+                                <span class="original-price">$67.98</span>
+                                <span class="bundle-price">$54.99</span>
+                                <span class="savings">Save $13!</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Glow Getter Bundle', 54.99)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="bundle-card">
+                        <div class="bundle-header" style="background: linear-gradient(135deg, #dda0dd 0%, #9370db 100%);">
+                            <span class="bundle-icon">🌸</span>
+                            <h3>Self-Care Sunday</h3>
+                        </div>
+                        <div class="bundle-details">
+                            <p class="bundle-description">Everything you need for the ultimate relaxation ritual</p>
+                            <ul class="bundle-items">
+                                <li>💜 Essential Oils Blend Butter (Lavender)</li>
+                                <li>🌿 Lavender Calm Body Scrub</li>
+                            </ul>
+                            <div class="bundle-pricing">
+                                <span class="original-price">$64.98</span>
+                                <span class="bundle-price">$52.99</span>
+                                <span class="savings">Save $12!</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Self-Care Sunday Bundle', 52.99)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="bundle-card featured-bundle">
+                        <div class="bundle-badge popular">MOST POPULAR</div>
+                        <div class="bundle-header" style="background: linear-gradient(135deg, #ffc0cb 0%, #ff69b4 100%);">
+                            <span class="bundle-icon">👑</span>
+                            <h3>Melanin Magic Trio</h3>
+                        </div>
+                        <div class="bundle-details">
+                            <p class="bundle-description">Our top 3 butter types formulated specifically for darker skin</p>
+                            <ul class="bundle-items">
+                                <li>🌰 Shea Butter (Vanilla Bliss)</li>
+                                <li>🍫 Cocoa Butter (Unscented Pure)</li>
+                                <li>🥑 Avocado Butter (Rose Garden)</li>
+                            </ul>
+                            <div class="bundle-pricing">
+                                <span class="original-price">$83.97</span>
+                                <span class="bundle-price">$69.99</span>
+                                <span class="savings">Save $14!</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Melanin Magic Trio', 69.99)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="bundle-card">
+                        <div class="bundle-header" style="background: linear-gradient(135deg, #ffe4b5 0%, #ffa500 100%);">
+                            <span class="bundle-icon">🌴</span>
+                            <h3>Tropical Escape</h3>
+                        </div>
+                        <div class="bundle-details">
+                            <p class="bundle-description">Transport yourself to paradise with tropical skincare favorites</p>
+                            <ul class="bundle-items">
+                                <li>🥥 Coconut Oil Butter (Citrus Burst)</li>
+                                <li>🥭 Mango Butter (Vanilla Bliss)</li>
+                                <li>🍊 Citrus Glow Body Scrub</li>
+                            </ul>
+                            <div class="bundle-pricing">
+                                <span class="original-price">$88.97</span>
+                                <span class="bundle-price">$72.99</span>
+                                <span class="savings">Save $16!</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Tropical Escape Bundle', 72.99)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="bundle-card">
+                        <div class="bundle-header" style="background: linear-gradient(135deg, #ffe4e1 0%, #ffc0cb 100%);">
+                            <span class="bundle-icon">💕</span>
+                            <h3>Date Night Ready</h3>
+                        </div>
+                        <div class="bundle-details">
+                            <p class="bundle-description">Romantic scents for soft, glowing skin</p>
+                            <ul class="bundle-items">
+                                <li>🌹 Avocado Butter (Rose Garden)</li>
+                                <li>🍦 Shea Butter (Vanilla Bliss)</li>
+                            </ul>
+                            <div class="bundle-pricing">
+                                <span class="original-price">$55.98</span>
+                                <span class="bundle-price">$46.99</span>
+                                <span class="savings">Save $9!</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Date Night Ready Bundle', 46.99)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="bundle-card">
+                        <div class="bundle-header" style="background: linear-gradient(135deg, #ffc0cb 0%, #ff1493 100%);">
+                            <span class="bundle-icon">⏰</span>
+                            <h3>Age-Defying Essentials</h3>
+                        </div>
+                        <div class="bundle-details">
+                            <p class="bundle-description">Our most powerful anti-aging formulas for mature melanin-rich skin</p>
+                            <ul class="bundle-items">
+                                <li>✨ Collagen Peptides Butter (Rose Garden)</li>
+                                <li>🥑 Avocado Butter (Lavender Dreams)</li>
+                            </ul>
+                            <div class="bundle-pricing">
+                                <span class="original-price">$64.98</span>
+                                <span class="bundle-price">$54.99</span>
+                                <span class="savings">Save $10!</span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Age-Defying Essentials Bundle', 54.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bundles-note">
+                    <p>✨ All bundles include free shipping & a handwritten thank you note</p>
+                    <p>💚 Supporting Black-owned business with every purchase</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Bundles Tab -->
 
         <!-- Membership Tab -->
         <div id="membership" class="tab-content">
