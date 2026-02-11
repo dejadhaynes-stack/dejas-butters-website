@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Oils Blend Collection - Deja's Butters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <h1 class="brand-name">Deja's Butters</h1>
+                <p class="brand-tagline">Pure • Organic • Natural | Black-Owned 👑</p>
+            </div>
+        </div>
+        <nav class="nav-tabs">
+            <a href="index.html" class="nav-tab">Home</a>
+            <a href="about.html" class="nav-tab">About Us</a>
+            <a href="faq.html" class="nav-tab">FAQ</a>
+            <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
+                <span class="cart-icon-minimal">🛒</span> Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="index.html" class="back-button">← Back to Products</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #dda0dd 0%, #9370db 100%);">
+                    <span class="product-icon">🌺</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Essential Oils Blend Body Butter</h1>
+                    <p class="product-price">Starting at $30.99</p>
+
+                    <div class="product-detail-description">
+                        <h3>Description</h3>
+                        <p>
+                            Experience the ultimate aromatherapy journey with our Essential Oils Blend collection - a carefully
+                            curated fusion of therapeutic-grade essential oils combined with nourishing plant butters. This unique
+                            formula goes beyond simple skincare, offering powerful mind-body benefits while delivering exceptional
+                            moisture to melanin-rich skin.
+                        </p>
+                        <p>
+                            Our Essential Oils Blend is crafted with a synergistic combination of oils chosen specifically for their
+                            compatibility with darker skin tones and their therapeutic properties. Each application provides not only
+                            deep hydration and skin nourishment but also aromatherapy benefits - from stress relief to mood elevation
+                            to improved sleep quality. The concentrated blend of premium essential oils absorbs beautifully into
+                            melanin-rich skin, leaving it soft, radiant, and beautifully scented without any greasy residue or white cast.
+                        </p>
+                    </div>
+
+                    <div class="ingredients-section" style="margin-top: 2rem;">
+                        <h3>🌸 Available Fragrances</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                            <a href="butter-lavender.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #e6e6fa; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">💜</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Lavender Dreams</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Relaxation & Sleep</p>
+                                </div>
+                            </a>
+                            <a href="butter-eucalyptus.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #d4f1d4; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">🌿</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Eucalyptus Mint</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Clarity & Energy</p>
+                                </div>
+                            </a>
+                            <a href="butter-citrus.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #fff4e6; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">🍊</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Citrus Burst</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Mood & Vitality</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ingredients-section">
+                <h3>🌿 Base Ingredients</h3>
+                <ul>
+                    <li>Therapeutic-Grade Essential Oil Blend (specific oils vary by fragrance)</li>
+                    <li>Organic Shea Butter (Unrefined)</li>
+                    <li>Organic Cocoa Butter</li>
+                    <li>Organic Coconut Oil (Virgin)</li>
+                    <li>Organic Jojoba Oil (carrier for essential oils)</li>
+                    <li>Organic Sweet Almond Oil</li>
+                    <li>Vitamin E Oil (Natural Tocopherol)</li>
+                    <li>Arrowroot Powder (smooth absorption)</li>
+                </ul>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Proven Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Aromatherapy Benefits:</strong> Concentrated essential oils provide therapeutic effects - reduce stress, improve mood, promote better sleep, or boost energy depending on the blend</li>
+                    <li><strong>Enhanced Absorption:</strong> Essential oils help other nutrients penetrate deeper into melanin-rich skin for maximum benefit</li>
+                    <li><strong>Skin Tone Evening:</strong> Many essential oils have natural skin-brightening properties that help fade hyperpigmentation on darker skin tones</li>
+                    <li><strong>Antibacterial Properties:</strong> Essential oils naturally fight acne-causing bacteria, keeping melanin-rich skin clear and blemish-free</li>
+                    <li><strong>Anti-Inflammatory:</strong> Reduces redness, irritation, and inflammation common in sensitive melanin-rich skin</li>
+                    <li><strong>Deep Hydration:</strong> Plant butters combined with essential oils create long-lasting moisture that prevents ashiness on darker skin</li>
+                    <li><strong>Circulation Boost:</strong> Essential oils stimulate blood flow, promoting healthy, glowing melanin-rich skin</li>
+                    <li><strong>Luxurious Experience:</strong> Each application is a sensory journey - the rich texture and aromatic scent transform daily skincare into a spa-like ritual</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Mind-Body Ritual:</strong> Apply after showering as part of your self-care routine. Take deep breaths
+                    while massaging the butter into your melanin-rich skin, allowing the aromatherapy benefits to calm your mind
+                    while nourishing your body. Perfect for morning energy or evening relaxation, depending on your chosen blend.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Therapeutic Application:</strong> For targeted aromatherapy, apply to pulse points (wrists, neck, behind
+                    ears) where the warmth releases the essential oils throughout the day. Use on chest for respiratory benefits or
+                    temples for headache relief. Always performs a patch test on melanin-rich skin before widespread use.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every jar of Deja's Butters is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only 100% pure, therapeutic-grade essential oils - never synthetic fragrances or
+                    fragrance oils. Our essential oils are sourced from certified organic farms around the world and tested for
+                    purity. Our products are formulated with darker skin tones in mind, addressing concerns like hyperpigmentation
+                    and ashiness while providing powerful aromatherapy benefits. We never test on animals and are committed to
+                    sustainable and ethical sourcing practices. Our products are free from parabens, sulfates, synthetic fragrances,
+                    and artificial colors. What you see on the label is what you get - pure, natural goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .fragrance-option {
+            text-decoration: none;
+        }
+        .fragrance-option > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: var(--primary-color);
+        }
+    </style>
+</body>
+</html>

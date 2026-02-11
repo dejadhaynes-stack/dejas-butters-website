@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango Butter Collection - Deja's Butters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <h1 class="brand-name">Deja's Butters</h1>
+                <p class="brand-tagline">Pure • Organic • Natural | Black-Owned 👑</p>
+            </div>
+        </div>
+        <nav class="nav-tabs">
+            <a href="index.html" class="nav-tab">Home</a>
+            <a href="about.html" class="nav-tab">About Us</a>
+            <a href="faq.html" class="nav-tab">FAQ</a>
+            <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
+                <span class="cart-icon-minimal">🛒</span> Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="index.html" class="back-button">← Back to Products</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #ffe4b5 0%, #ffa500 100%);">
+                    <span class="product-icon">🥭</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Mango Butter Body Butter</h1>
+                    <p class="product-price">Starting at $28.99</p>
+
+                    <div class="product-detail-description">
+                        <h3>Description</h3>
+                        <p>
+                            Treat your skin to tropical luxury with our exotic Mango Butter collection. Extracted from the kernels
+                            of ripe organic mangoes, this silky-smooth butter is a hidden gem in natural skincare for melanin-rich
+                            skin. Lighter than cocoa butter but just as nourishing, mango butter provides the perfect balance of
+                            moisture and comfort for darker skin tones.
+                        </p>
+                        <p>
+                            Rich in vitamins A, C, and E, our mango butter is particularly effective at protecting melanin-rich skin
+                            from environmental damage while promoting a youthful, radiant glow. Its unique emollient properties make
+                            it excellent for sensitive skin, providing deep hydration without clogging pores. The smooth, creamy
+                            texture melts effortlessly into darker skin, leaving no greasy residue or white cast - just beautifully
+                            soft, glowing skin.
+                        </p>
+                    </div>
+
+                    <div class="ingredients-section" style="margin-top: 2rem;">
+                        <h3>🌸 Available Fragrances</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                            <a href="butter-citrus.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #fff4e6; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">🍊</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Citrus Burst</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Tropical Sunshine</p>
+                                </div>
+                            </a>
+                            <a href="butter-vanilla.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #fffacd; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">🍦</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Vanilla Bliss</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Mango Vanilla Dream</p>
+                                </div>
+                            </a>
+                            <a href="butter-unscented.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #f0f0f0; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">🤍</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Unscented Pure</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Pure Mango Goodness</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ingredients-section">
+                <h3>🌿 Base Ingredients</h3>
+                <ul>
+                    <li>Organic Mango Butter (Cold-Pressed from Mango Kernels)</li>
+                    <li>Organic Shea Butter (Grade A)</li>
+                    <li>Organic Coconut Oil (Virgin)</li>
+                    <li>Vitamin E Oil (Natural Tocopherol)</li>
+                    <li>Organic Sweet Almond Oil</li>
+                    <li>Arrowroot Powder (silky texture)</li>
+                    <li>Plus fragrance-specific essential oils</li>
+                </ul>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Proven Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>UV Protection:</strong> Rich in vitamins A and C, mango butter provides natural sun protection and helps repair sun damage on melanin-rich skin</li>
+                    <li><strong>Fades Dark Spots:</strong> Vitamin C and beta-carotene work together to brighten skin and reduce hyperpigmentation on darker skin tones</li>
+                    <li><strong>Silky Smooth Texture:</strong> Lighter than most butters, mango butter absorbs quickly into melanin-rich skin without feeling heavy or greasy</li>
+                    <li><strong>Anti-Aging Properties:</strong> Antioxidants fight free radicals and boost collagen production, reducing fine lines and wrinkles</li>
+                    <li><strong>Soothes Sensitive Skin:</strong> Gentle and non-irritating, perfect for melanin-rich skin prone to eczema or dermatitis</li>
+                    <li><strong>Prevents Ashiness:</strong> Deep moisturizing properties keep darker skin glowing and hydrated throughout the day</li>
+                    <li><strong>Improves Elasticity:</strong> Essential fatty acids strengthen skin's structure, improving firmness and tone</li>
+                    <li><strong>Non-Comedogenic:</strong> Won't clog pores, making it safe for acne-prone melanin-rich skin and suitable for face and body</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Daytime Moisture:</strong> Perfect for morning application! The lightweight texture absorbs quickly,
+                    making it ideal under makeup or for busy mornings. Provides all-day hydration and subtle sun protection for
+                    melanin-rich skin.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Sensitive Skin Care:</strong> Ideal for those with sensitive melanin-rich skin who find heavier butters
+                    too rich. Use daily on face and body for gentle, effective moisture that won't cause irritation or breakouts.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every jar of Deja's Butters is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only certified organic mango butter sourced from sustainable farms in India and
+                    Africa. Our products are formulated with darker skin tones in mind, addressing concerns like hyperpigmentation,
+                    sensitivity, and ashiness while bringing out your natural glow. We never test on animals and are committed
+                    to fair-trade and ethical sourcing practices. Our products are free from parabens, sulfates, synthetic
+                    fragrances, and artificial colors. What you see on the label is what you get - pure, natural goodness made
+                    for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .fragrance-option {
+            text-decoration: none;
+        }
+        .fragrance-option > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: var(--primary-color);
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shea Butter Collection - Deja's Butters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <h1 class="brand-name">Deja's Butters</h1>
+                <p class="brand-tagline">Pure • Organic • Natural | Black-Owned 👑</p>
+            </div>
+        </div>
+        <nav class="nav-tabs">
+            <a href="index.html" class="nav-tab">Home</a>
+            <a href="about.html" class="nav-tab">About Us</a>
+            <a href="faq.html" class="nav-tab">FAQ</a>
+            <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
+                <span class="cart-icon-minimal">🛒</span> Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="index.html" class="back-button">← Back to Products</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #f5e6d3 0%, #d4a574 100%);">
+                    <span class="product-icon">🌰</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Shea Butter Body Butter</h1>
+                    <p class="product-price">Starting at $26.99</p>
+
+                    <div class="product-detail-description">
+                        <h3>Description</h3>
+                        <p>
+                            Experience the gold standard of natural skincare with our premium Shea Butter collection. Sourced from
+                            organic shea nuts in West Africa, our unrefined shea butter is the foundation of luxury for melanin-rich skin.
+                            Known as "women's gold" in Africa, shea butter has been used for centuries to protect and nourish darker skin tones.
+                        </p>
+                        <p>
+                            Our Shea Butter is the most versatile base in our collection, offering deep hydration, protection against
+                            environmental stressors, and powerful healing properties. Rich in vitamins A, E, and F, it's specifically
+                            formulated to address hyperpigmentation, ashiness, and uneven skin tone that commonly affect melanin-rich skin.
+                        </p>
+                    </div>
+
+                    <div class="ingredients-section" style="margin-top: 2rem;">
+                        <h3>🌸 Available Fragrances</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                            <a href="butter-lavender.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #e6e6fa; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">💜</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Lavender Dreams</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Calming & Soothing</p>
+                                </div>
+                            </a>
+                            <a href="butter-vanilla.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #fffacd; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">🍦</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Vanilla Bliss</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Sweet & Comforting</p>
+                                </div>
+                            </a>
+                            <a href="butter-unscented.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #f0f0f0; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">🤍</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Unscented Pure</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Natural & Gentle</p>
+                                </div>
+                            </a>
+                            <a href="butter-rose.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #ffe4e1; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">🌹</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Rose Garden</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Romantic & Luxurious</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ingredients-section">
+                <h3>🌿 Base Ingredients</h3>
+                <ul>
+                    <li>Organic Shea Butter (Unrefined, Grade A from Ghana)</li>
+                    <li>Organic Coconut Oil (Virgin, Cold-Pressed)</li>
+                    <li>Vitamin E Oil (Natural Tocopherol)</li>
+                    <li>Organic Jojoba Oil</li>
+                    <li>Arrowroot Powder (for smooth absorption)</li>
+                    <li>Plus fragrance-specific essential oils</li>
+                </ul>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Proven Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Superior Moisture Retention:</strong> Shea butter's fatty acid profile creates a protective barrier that locks in moisture for 24+ hours without white residue on darker skin</li>
+                    <li><strong>Fades Hyperpigmentation:</strong> Vitamins A and E work together to reduce dark spots, acne scars, and uneven skin tone common in melanin-rich skin</li>
+                    <li><strong>Prevents Ashiness:</strong> Deep penetrating properties keep darker skin glowing and hydrated, eliminating the ashy appearance</li>
+                    <li><strong>Anti-Inflammatory Properties:</strong> Natural triterpenes reduce inflammation, soothe eczema, and calm irritated melanin-rich skin</li>
+                    <li><strong>Boosts Collagen Production:</strong> Vitamin A stimulates collagen synthesis, improving skin elasticity and reducing fine lines</li>
+                    <li><strong>Sun Protection:</strong> Provides SPF 3-4 natural sun protection, though additional sunscreen is recommended for melanin-rich skin</li>
+                    <li><strong>Heals Scars and Stretch Marks:</strong> Promotes cell regeneration and improves the appearance of scars and stretch marks on darker skin</li>
+                    <li><strong>Non-Comedogenic:</strong> Won't clog pores despite its rich texture, making it safe for all skin types including acne-prone melanin-rich skin</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Daily Routine:</strong> Apply a small amount to slightly damp skin after showering. The warmth
+                    of your skin will help the butter melt and absorb quickly. Focus on areas prone to dryness and
+                    hyperpigmentation.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Best Results:</strong> Use twice daily - morning and night. For maximum hyperpigmentation
+                    reduction, apply consistently for 4-6 weeks. The natural shea butter works best on melanin-rich skin
+                    when used regularly.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every jar of Deja's Butters is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only certified organic ingredients specifically chosen to enhance and protect
+                    melanin-rich skin. Our shea butter is ethically sourced from women's cooperatives in West Africa,
+                    ensuring fair wages and sustainable practices. We never test on animals and are committed to bringing
+                    out your natural glow. Our products are free from parabens, sulfates, synthetic fragrances, and
+                    artificial colors. What you see on the label is what you get - pure, natural goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .fragrance-option {
+            text-decoration: none;
+        }
+        .fragrance-option > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: var(--primary-color);
+        }
+    </style>
+</body>
+</html>

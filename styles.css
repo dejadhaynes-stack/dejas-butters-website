@@ -523,6 +523,30 @@ header {
     text-decoration: underline;
 }
 
+.view-details-button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 0.5rem;
+}
+
+.view-details-button:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(125, 155, 118, 0.3);
+}
+
 /* Features Section */
 .features {
     padding: 4rem 2rem;

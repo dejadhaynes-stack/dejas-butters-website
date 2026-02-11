@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avocado Butter Collection - Deja's Butters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <h1 class="brand-name">Deja's Butters</h1>
+                <p class="brand-tagline">Pure • Organic • Natural | Black-Owned 👑</p>
+            </div>
+        </div>
+        <nav class="nav-tabs">
+            <a href="index.html" class="nav-tab">Home</a>
+            <a href="about.html" class="nav-tab">About Us</a>
+            <a href="faq.html" class="nav-tab">FAQ</a>
+            <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
+                <span class="cart-icon-minimal">🛒</span> Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="index.html" class="back-button">← Back to Products</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #b8d4b8 0%, #7d9b76 100%);">
+                    <span class="product-icon">🥑</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Avocado Butter Body Butter</h1>
+                    <p class="product-price">Starting at $29.99</p>
+
+                    <div class="product-detail-description">
+                        <h3>Description</h3>
+                        <p>
+                            Experience the ultimate in luxurious skincare with our premium Avocado Butter collection. Extracted from
+                            the rich, creamy flesh of organic avocados, this butter is a true superfood for melanin-rich skin. Packed
+                            with vitamins A, D, and E, along with potassium and essential fatty acids, avocado butter delivers
+                            unparalleled nourishment to darker skin tones.
+                        </p>
+                        <p>
+                            Avocado butter is particularly effective for mature melanin-rich skin, offering intense anti-aging benefits
+                            while improving skin elasticity and firmness. Its unique sterolins content helps reduce age spots and
+                            hyperpigmentation, creating a more even and radiant complexion. The rich, velvety texture melts into darker
+                            skin instantly, providing deep hydration without any greasy residue or white cast.
+                        </p>
+                    </div>
+
+                    <div class="ingredients-section" style="margin-top: 2rem;">
+                        <h3>🌸 Available Fragrances</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                            <a href="butter-rose.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #ffe4e1; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">🌹</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Rose Garden</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Luxurious & Anti-Aging</p>
+                                </div>
+                            </a>
+                            <a href="butter-lavender.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #e6e6fa; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">💜</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Lavender Dreams</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Calming & Rejuvenating</p>
+                                </div>
+                            </a>
+                            <a href="butter-unscented.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #f0f0f0; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">🤍</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Unscented Pure</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Pure Avocado Goodness</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ingredients-section">
+                <h3>🌿 Base Ingredients</h3>
+                <ul>
+                    <li>Organic Avocado Butter (Cold-Pressed from Fresh Avocados)</li>
+                    <li>Organic Shea Butter (Grade A)</li>
+                    <li>Organic Jojoba Oil (mimics skin's natural oils)</li>
+                    <li>Vitamin E Oil (Natural Tocopherol)</li>
+                    <li>Organic Rosehip Seed Oil (anti-aging)</li>
+                    <li>Plus fragrance-specific essential oils</li>
+                </ul>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Proven Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Powerful Anti-Aging:</strong> Rich in sterolins and vitamin E, avocado butter reduces fine lines, wrinkles, and age spots on melanin-rich skin</li>
+                    <li><strong>Fades Dark Spots:</strong> Natural steroids help break down hyperpigmentation and create an even, luminous complexion on darker skin tones</li>
+                    <li><strong>Deep Penetrating Moisture:</strong> Unique fatty acid profile allows avocado butter to penetrate deeper layers of melanin-rich skin for lasting hydration</li>
+                    <li><strong>Boosts Collagen Production:</strong> Vitamins A and E stimulate collagen synthesis, improving skin firmness and elasticity</li>
+                    <li><strong>Heals and Repairs:</strong> Excellent for healing scars, eczema, and sun damage on melanin-rich skin</li>
+                    <li><strong>Prevents Ashiness:</strong> Rich emollients keep darker skin glowing and hydrated, eliminating dry, ashy appearance</li>
+                    <li><strong>Improves Skin Barrier:</strong> Essential fatty acids strengthen skin's natural protective barrier, reducing moisture loss and irritation</li>
+                    <li><strong>Luxurious Texture:</strong> Velvety smooth formula absorbs quickly into melanin-rich skin without feeling heavy or greasy</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Anti-Aging Treatment:</strong> Apply to face and neck every night before bed. Focus on areas with fine
+                    lines, dark spots, or hyperpigmentation. Gently massage in upward motions for 1-2 minutes to boost circulation
+                    and improve absorption on melanin-rich skin.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Full Body Luxury:</strong> Use daily after showering on damp skin for maximum absorption. Perfect for
+                    mature melanin-rich skin that needs extra nourishment. The rich formula provides all-day hydration and protection.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every jar of Deja's Butters is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only certified organic avocado butter sourced from sustainable farms in California
+                    and Mexico. Our products are formulated with darker skin tones in mind, addressing concerns like
+                    hyperpigmentation, aging, and ashiness while bringing out your natural glow. We never test on animals and
+                    are committed to fair-trade and ethical sourcing practices. Our products are free from parabens, sulfates,
+                    synthetic fragrances, and artificial colors. What you see on the label is what you get - pure, natural
+                    goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .fragrance-option {
+            text-decoration: none;
+        }
+        .fragrance-option > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: var(--primary-color);
+        }
+    </style>
+</body>
+</html>

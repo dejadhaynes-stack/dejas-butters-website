@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olive Oil Collection - Deja's Butters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <h1 class="brand-name">Deja's Butters</h1>
+                <p class="brand-tagline">Pure • Organic • Natural | Black-Owned 👑</p>
+            </div>
+        </div>
+        <nav class="nav-tabs">
+            <a href="index.html" class="nav-tab">Home</a>
+            <a href="about.html" class="nav-tab">About Us</a>
+            <a href="faq.html" class="nav-tab">FAQ</a>
+            <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
+                <span class="cart-icon-minimal">🛒</span> Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="index.html" class="back-button">← Back to Products</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #dcedc8 0%, #aed581 100%);">
+                    <span class="product-icon">🫒</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Olive Oil Body Butter</h1>
+                    <p class="product-price">Starting at $27.99</p>
+
+                    <div class="product-detail-description">
+                        <h3>Description</h3>
+                        <p>
+                            Discover the timeless beauty secret of the Mediterranean with our premium Extra Virgin Olive Oil
+                            collection. Cold-pressed from organic olives grown in sun-drenched groves, our olive oil butter has
+                            been trusted for thousands of years to nourish and protect skin. This ancient beauty staple is
+                            particularly beloved for its gentle yet powerful benefits on melanin-rich skin.
+                        </p>
+                        <p>
+                            Rich in squalene, vitamins E and K, and powerful antioxidants, our olive oil butter provides deep
+                            nourishment while protecting melanin-rich skin from premature aging. Unlike synthetic moisturizers,
+                            olive oil closely mimics your skin's natural sebum, making it easily absorbed without clogging pores.
+                            The silky, luxurious formula melts into darker skin tones, leaving them soft, radiant, and beautifully
+                            hydrated with no greasy residue or white cast.
+                        </p>
+                    </div>
+
+                    <div class="ingredients-section" style="margin-top: 2rem;">
+                        <h3>🌸 Available Fragrances</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                            <a href="butter-rose.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #ffe4e1; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">🌹</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Rose Garden</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Classic Elegance</p>
+                                </div>
+                            </a>
+                            <a href="butter-lavender.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #e6e6fa; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">💜</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Lavender Dreams</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Mediterranean Serenity</p>
+                                </div>
+                            </a>
+                            <a href="butter-unscented.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #f0f0f0; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">🤍</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Unscented Pure</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Pure Olive Essence</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ingredients-section">
+                <h3>🌿 Base Ingredients</h3>
+                <ul>
+                    <li>Organic Extra Virgin Olive Oil (Cold-Pressed, First Press)</li>
+                    <li>Organic Shea Butter (Unrefined)</li>
+                    <li>Organic Cocoa Butter</li>
+                    <li>Vitamin E Oil (Natural Tocopherol)</li>
+                    <li>Organic Jojoba Oil</li>
+                    <li>Beeswax (organic, for texture)</li>
+                    <li>Plus fragrance-specific essential oils</li>
+                </ul>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Proven Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Anti-Aging Powerhouse:</strong> High in squalene and vitamin E, olive oil reduces fine lines and protects melanin-rich skin from premature aging</li>
+                    <li><strong>Natural Skin Mimic:</strong> Closely resembles skin's natural oils, making it easily absorbed into melanin-rich skin without clogging pores</li>
+                    <li><strong>Fades Hyperpigmentation:</strong> Vitamin K helps reduce dark circles, age spots, and hyperpigmentation common in darker skin tones</li>
+                    <li><strong>Antioxidant Protection:</strong> Polyphenols and hydroxytyrosol protect melanin-rich skin from environmental damage and UV exposure</li>
+                    <li><strong>Deep Hydration:</strong> Fatty acids penetrate deeply to moisturize from within, preventing ashiness and dryness on darker skin</li>
+                    <li><strong>Gentle on Sensitive Skin:</strong> Naturally hypoallergenic, perfect for melanin-rich skin prone to irritation or allergies</li>
+                    <li><strong>Promotes Healing:</strong> Anti-inflammatory properties accelerate healing of scars, cuts, and blemishes on darker skin</li>
+                    <li><strong>Improves Skin Elasticity:</strong> Essential fatty acids and squalene boost collagen production, firming and toning melanin-rich skin</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Anti-Aging Night Treatment:</strong> Apply generously to face, neck, and décolletage before bed. The
+                    rich antioxidants work overnight to repair and rejuvenate melanin-rich skin. Wake up to noticeably softer,
+                    more radiant skin.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Daily Body Moisture:</strong> Perfect for all-over body use. The gentle formula is ideal for sensitive
+                    melanin-rich skin or those with allergies. Use after showering for silky smooth, deeply hydrated skin that
+                    lasts all day.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every jar of Deja's Butters is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only certified organic, extra virgin olive oil from first cold-press, sourced from
+                    family-owned groves in Greece and Spain. Our products are formulated with darker skin tones in mind,
+                    addressing concerns like hyperpigmentation, aging, and ashiness while bringing out your natural glow. We
+                    never test on animals and are committed to sustainable and ethical sourcing practices. Our products are free
+                    from parabens, sulfates, synthetic fragrances, and artificial colors. What you see on the label is what you
+                    get - pure, natural goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .fragrance-option {
+            text-decoration: none;
+        }
+        .fragrance-option > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: var(--primary-color);
+        }
+    </style>
+</body>
+</html>

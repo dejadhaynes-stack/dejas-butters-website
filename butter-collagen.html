@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collagen Peptides Collection - Deja's Butters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <h1 class="brand-name">Deja's Butters</h1>
+                <p class="brand-tagline">Pure • Organic • Natural | Black-Owned 👑</p>
+            </div>
+        </div>
+        <nav class="nav-tabs">
+            <a href="index.html" class="nav-tab">Home</a>
+            <a href="about.html" class="nav-tab">About Us</a>
+            <a href="faq.html" class="nav-tab">FAQ</a>
+            <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
+                <span class="cart-icon-minimal">🛒</span> Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="index.html" class="back-button">← Back to Products</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #ffc0cb 0%, #ff69b4 100%);">
+                    <span class="product-icon">✨</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Collagen Peptides Body Butter</h1>
+                    <p class="product-price">Starting at $34.99</p>
+
+                    <div class="product-detail-description">
+                        <h3>Description</h3>
+                        <p>
+                            Turn back the clock with our revolutionary Collagen Peptides collection - our most advanced anti-aging
+                            formula designed specifically for melanin-rich skin. This premium butter combines hydrolyzed marine
+                            collagen peptides with luxurious plant butters to deliver visible results. While melanin naturally
+                            protects darker skin from sun damage, collagen loss still occurs with age, leading to fine lines and
+                            loss of firmness.
+                        </p>
+                        <p>
+                            Our Collagen Peptides butter is formulated with small-molecule peptides that can actually penetrate
+                            melanin-rich skin to stimulate natural collagen production from within. Combined with hyaluronic acid
+                            and vitamin C, this powerhouse formula improves skin elasticity, reduces fine lines, and creates a
+                            lifted, youthful appearance. The rich, luxurious texture melts into darker skin instantly, delivering
+                            intense hydration and anti-aging benefits without any greasy residue or white cast.
+                        </p>
+                    </div>
+
+                    <div class="ingredients-section" style="margin-top: 2rem;">
+                        <h3>🌸 Available Fragrances</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                            <a href="butter-rose.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #ffe4e1; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">🌹</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Rose Garden</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Age-Defying Luxury</p>
+                                </div>
+                            </a>
+                            <a href="butter-lavender.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #e6e6fa; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">💜</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Lavender Dreams</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Youthful Rejuvenation</p>
+                                </div>
+                            </a>
+                            <a href="butter-vanilla.html" class="fragrance-option">
+                                <div style="padding: 1.5rem; border: 2px solid #fffacd; border-radius: 10px; text-align: center; transition: all 0.3s;">
+                                    <span style="font-size: 2rem;">🍦</span>
+                                    <h4 style="margin: 0.5rem 0; color: var(--primary-color);">Vanilla Bliss</h4>
+                                    <p style="margin: 0; color: #666; font-size: 0.9rem;">Sweet Anti-Aging</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ingredients-section">
+                <h3>🌿 Base Ingredients</h3>
+                <ul>
+                    <li>Hydrolyzed Marine Collagen Peptides (Type I & III)</li>
+                    <li>Organic Shea Butter (Unrefined, Grade A)</li>
+                    <li>Organic Cocoa Butter</li>
+                    <li>Hyaluronic Acid (Sodium Hyaluronate)</li>
+                    <li>Vitamin C (L-Ascorbic Acid, Stabilized)</li>
+                    <li>Organic Rosehip Seed Oil (rich in vitamin A)</li>
+                    <li>Vitamin E Oil (Natural Tocopherol)</li>
+                    <li>Organic Jojoba Oil</li>
+                    <li>Plus fragrance-specific essential oils</li>
+                </ul>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Proven Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Boosts Collagen Production:</strong> Marine peptides stimulate natural collagen synthesis in melanin-rich skin, improving firmness and reducing sagging</li>
+                    <li><strong>Reduces Fine Lines & Wrinkles:</strong> Clinically proven to diminish the appearance of aging signs on darker skin tones within 4-6 weeks</li>
+                    <li><strong>Improves Skin Elasticity:</strong> Hyaluronic acid and collagen work together to restore bounce and suppleness to melanin-rich skin</li>
+                    <li><strong>Fades Age Spots:</strong> Vitamin C brightens hyperpigmentation and age spots, creating an even, radiant complexion on darker skin</li>
+                    <li><strong>Deep Hydration:</strong> Hyaluronic acid holds 1000x its weight in water, delivering intense moisture that lasts all day on melanin-rich skin</li>
+                    <li><strong>Firms & Lifts:</strong> Peptides create a visible lifting effect, particularly on neck, jawline, and areas prone to sagging</li>
+                    <li><strong>Prevents Further Aging:</strong> Antioxidants protect melanin-rich skin from environmental damage and free radicals</li>
+                    <li><strong>Luxurious Texture:</strong> Rich yet fast-absorbing formula leaves darker skin soft, smooth, and glowing without greasiness or white residue</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Advanced Anti-Aging Routine:</strong> Apply twice daily to clean skin - morning and night. Focus on
+                    face, neck, décolletage, and backs of hands. Massage in upward, lifting motions for 2-3 minutes to boost
+                    circulation and maximize collagen absorption into melanin-rich skin.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Best Results:</strong> For maximum anti-aging benefits, use consistently for 8-12 weeks. Pair with
+                    SPF during the day to protect your investment in youthful melanin-rich skin. Most customers see visible
+                    improvement in skin firmness and tone within the first month.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every jar of Deja's Butters is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only premium hydrolyzed marine collagen from sustainable, wild-caught fish sources.
+                    Our products are formulated with darker skin tones in mind, addressing concerns like hyperpigmentation,
+                    aging, and loss of elasticity while bringing out your natural glow. This is our most premium formula,
+                    combining cutting-edge skincare science with natural ingredients. We never test on animals and are committed
+                    to sustainable sourcing practices. Our products are free from parabens, sulfates, synthetic fragrances, and
+                    artificial colors. What you see on the label is what you get - pure, natural goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .fragrance-option {
+            text-decoration: none;
+        }
+        .fragrance-option > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: var(--primary-color);
+        }
+    </style>
+</body>
+</html>
