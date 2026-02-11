@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Getter Bundle - Deja's Butters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <h1 class="brand-name">Deja's Butters</h1>
+                <p class="brand-tagline">Pure • Organic • Natural | Black-Owned 👑</p>
+            </div>
+        </div>
+        <nav class="nav-tabs">
+            <a href="index.html" class="nav-tab">Home</a>
+            <a href="about.html" class="nav-tab">About Us</a>
+            <a href="faq.html" class="nav-tab">FAQ</a>
+            <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
+                <span class="cart-icon-minimal">🛒</span> Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="javascript:history.back()" class="back-button">← Back</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #f5e6d3 0%, #d4a574 100%);">
+                    <span class="product-icon" style="font-size: 4rem;">✨</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <div class="bundle-badge" style="display: inline-block; background: var(--accent-color); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; margin-bottom: 1rem;">BEST SELLER</div>
+                    <h1>Glow Getter Bundle</h1>
+                    <p class="product-price" style="font-size: 2rem; color: var(--primary-color); font-weight: 600;">$54.99</p>
+                    <p style="text-decoration: line-through; color: #999; margin-top: -0.5rem;">Regular price: $67.98</p>
+                    <p style="color: var(--accent-color); font-weight: 600; margin-top: 0.5rem;">💚 You save $13!</p>
+
+                    <div class="product-detail-description">
+                        <h3>Bundle Description</h3>
+                        <p>
+                            Your complete routine for radiant, glowing melanin-rich skin. This carefully curated bundle combines
+                            our best-selling Shea Butter with an energizing Coffee Awakening Scrub for the ultimate glow transformation.
+                            Perfect for anyone looking to achieve that healthy, natural radiance that makes melanin-rich skin shine.
+                        </p>
+                        <p>
+                            Start with the Coffee Awakening Scrub to exfoliate and prep your skin, then seal in moisture and radiance
+                            with our luxurious Lavender Dreams Shea Butter. The combination reduces dark spots, prevents ashiness,
+                            and leaves your skin glowing from within.
+                        </p>
+                    </div>
+
+                    <div class="ingredients-section" style="margin-top: 2rem;">
+                        <h3>📦 What's Included</h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+                                🌰 <a href="butter-lavender.html" class="bundle-product-link">Shea Butter Body Butter (Lavender Dreams)</a>
+                                <span style="float: right; color: #999;">$26.99</span>
+                            </li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+                                ☕ <a href="scrub-coffee.html" class="bundle-product-link">Coffee Awakening Body Scrub</a>
+                                <span style="float: right; color: #999;">$34.99</span>
+                            </li>
+                            <li style="padding: 0.5rem 0;">
+                                💜 Bonus: Travel-size Lavender Oil
+                                <span style="float: right; color: var(--accent-color); font-weight: 600;">FREE</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="add-to-cart" onclick="addToCart('Glow Getter Bundle', 54.99)" style="width: 100%; padding: 1rem; margin-top: 2rem; font-size: 1.1rem;">Add Bundle to Cart - $54.99</button>
+                </div>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Bundle Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Complete Skincare Routine:</strong> Exfoliate with coffee scrub, then moisturize with shea butter for maximum glow</li>
+                    <li><strong>Reduces Dark Spots:</strong> Coffee grounds reduce hyperpigmentation while shea butter fades existing spots</li>
+                    <li><strong>Prevents Ashiness:</strong> Deep hydration from shea butter keeps darker skin glowing all day</li>
+                    <li><strong>Improves Circulation:</strong> Coffee scrub boosts blood flow for healthy, radiant melanin-rich skin</li>
+                    <li><strong>Calming Aromatherapy:</strong> Lavender essential oil promotes relaxation and stress relief</li>
+                    <li><strong>Cost Savings:</strong> Save $13 compared to buying products separately</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use This Bundle</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Step 1:</strong> In the shower, apply Coffee Awakening Scrub to damp skin using circular motions.
+                    Focus on areas with hyperpigmentation, cellulite, or rough texture. Rinse thoroughly.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Step 2:</strong> Pat skin dry (leave slightly damp). Apply Shea Butter Body Butter while skin is
+                    still warm and slightly moist for maximum absorption. The warmth helps the butter melt into your melanin-rich skin.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Step 3:</strong> Use the bonus travel-size lavender oil on pulse points for aromatherapy benefits
+                    throughout the day.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Best Results:</strong> Use this routine 2-3 times per week for the scrub, and daily for the butter.
+                    You'll see noticeable improvements in skin tone, texture, and radiance within 2-4 weeks.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every product in this bundle is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only certified organic ingredients specifically chosen to enhance and protect
+                    melanin-rich skin. Free shipping included with this bundle! We never test on animals and are committed
+                    to bringing out your natural glow. Our products are free from parabens, sulfates, synthetic fragrances,
+                    and artificial colors. What you see on the label is what you get - pure, natural goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .bundle-product-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            border-bottom: 2px dashed var(--accent-color);
+            transition: all 0.3s ease;
+        }
+        .bundle-product-link:hover {
+            border-bottom: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+        }
+    </style>
+</body>
+</html>

@@ -283,6 +283,12 @@ header {
     animation: fadeIn 0.3s ease;
 }
 
+.dropdown.active .dropdown-content,
+.nav-dropdown.active .dropdown-content {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
 /* Navigation Dropdown Styles */
 .nav-dropdown {
     position: relative;

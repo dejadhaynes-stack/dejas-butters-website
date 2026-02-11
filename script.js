@@ -382,6 +382,40 @@ function loadProductDetails() {
     }
 }
 
+// Dropdown click functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all dropdown buttons
+    const dropdownButtons = document.querySelectorAll('.dropdown-button');
+
+    dropdownButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.stopPropagation();
+
+            // Get the parent dropdown
+            const dropdown = this.closest('.dropdown, .nav-dropdown');
+
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown, .nav-dropdown').forEach(otherDropdown => {
+                if (otherDropdown !== dropdown) {
+                    otherDropdown.classList.remove('active');
+                }
+            });
+
+            // Toggle current dropdown
+            dropdown.classList.toggle('active');
+        });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown') && !e.target.closest('.nav-dropdown')) {
+            document.querySelectorAll('.dropdown, .nav-dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+});
+
 // Initialize cart on page load
 document.addEventListener('DOMContentLoaded', function() {
     updateCart();

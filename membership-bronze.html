@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bronze Glow Membership - Deja's Butters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <h1 class="brand-name">Deja's Butters</h1>
+                <p class="brand-tagline">Pure • Organic • Natural | Black-Owned 👑</p>
+            </div>
+        </div>
+        <nav class="nav-tabs">
+            <a href="index.html" class="nav-tab">Home</a>
+            <a href="about.html" class="nav-tab">About Us</a>
+            <a href="faq.html" class="nav-tab">FAQ</a>
+            <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
+                <span class="cart-icon-minimal">🛒</span> Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="javascript:history.back()" class="back-button">← Back</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #cd7f32 0%, #b8860b 100%);">
+                    <span class="product-icon" style="font-size: 4rem;">💰</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Bronze Glow Membership</h1>
+                    <p class="product-price" style="font-size: 2rem; color: var(--primary-color); font-weight: 600;">$15/month</p>
+                    <p style="color: #666; margin-top: -0.5rem;">Perfect for occasional shoppers</p>
+
+                    <div class="product-detail-description">
+                        <h3>Membership Description</h3>
+                        <p>
+                            Welcome to the Deja's Butters VIP Club! Our Bronze Glow membership is perfect for customers who love
+                            our products and want to save on every purchase while enjoying exclusive perks. This entry-level tier
+                            gives you access to member-only benefits and shows your support for our Black-owned business.
+                        </p>
+                        <p>
+                            As a Bronze member, you're part of our community of melanin-rich skincare enthusiasts who believe in
+                            the power of natural, organic body care. You'll get early access to new products, birthday treats, and
+                            monthly skincare tips specifically for darker skin tones. Plus, you save 10% on everything - forever!
+                        </p>
+                    </div>
+
+                    <div class="ingredients-section" style="margin-top: 2rem;">
+                        <h3>✨ Member Benefits</h3>
+                        <ul>
+                            <li>✓ <strong>10% off all purchases</strong> - Save on every order, no minimums required</li>
+                            <li>✓ <strong>Free shipping on orders over $50</strong> - Most bundles qualify!</li>
+                            <li>✓ <strong>Early access to new products</strong> - Shop new releases before the public</li>
+                            <li>✓ <strong>Birthday month special gift</strong> - A surprise treat just for you</li>
+                            <li>✓ <strong>Monthly skincare tips newsletter</strong> - Expert advice for melanin-rich skin</li>
+                        </ul>
+                    </div>
+
+                    <button class="add-to-cart" onclick="alert('Membership coming soon! Email contact@dejasbutters.com to join the waitlist and we\'ll notify you when memberships launch.');" style="width: 100%; padding: 1rem; margin-top: 2rem; font-size: 1.1rem;">Join Bronze - $15/month</button>
+                    <p style="text-align: center; color: #666; margin-top: 1rem; font-size: 0.9rem;">Cancel anytime, no questions asked</p>
+                </div>
+            </div>
+
+            <div class="benefits-section">
+                <h3>💚 Why Join Bronze Glow?</h3>
+                <ul>
+                    <li><strong>Instant Savings:</strong> Your 10% discount activates immediately and works on all products, bundles, and special offers</li>
+                    <li><strong>Free Shipping:</strong> Most of our bundles are over $50, so you'll enjoy free shipping on most orders</li>
+                    <li><strong>Be First:</strong> Get exclusive early access to new butter types, fragrances, and seasonal collections</li>
+                    <li><strong>Birthday Love:</strong> We'll send you a special gift during your birthday month - typically a travel-size product or sample set</li>
+                    <li><strong>Expert Tips:</strong> Monthly newsletter with skincare routines, ingredient spotlights, and tips specifically for melanin-rich skin</li>
+                    <li><strong>Support Black Business:</strong> Your membership directly supports a Black woman entrepreneur and our community initiatives</li>
+                    <li><strong>No Commitment:</strong> Cancel anytime with one click - no hoops to jump through, no pressure to stay</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💰 Membership Savings Calculator</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Example 1:</strong> If you purchase one $27 butter per month, you save $2.70 per order. After 6 months,
+                    your savings ($16.20) exceed your membership cost ($90), and you've also enjoyed free shipping and other perks!
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Example 2:</strong> Purchase a $55 bundle once per quarter with free shipping. You save $5.50 on each
+                    bundle plus $5 shipping = $10.50 savings per order. Over a year, that's $42 in savings vs $180 membership cost,
+                    but you also get early access, birthday gifts, and support a Black-owned business!
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Best Value:</strong> If you purchase 2+ products per month, Bronze Glow pays for itself and then some.
+                    Plus, the intangible benefits make it worthwhile even for occasional shoppers who want to support our mission.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>❓ Frequently Asked Questions</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>When will my discount activate?</strong><br>
+                    Immediately upon joining! Your discount code will be emailed to you within minutes.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>How do I cancel?</strong><br>
+                    Log into your account and click "Cancel Membership" - that's it! No emails, no phone calls, no guilt trips.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Can I upgrade later?</strong><br>
+                    Absolutely! Upgrade to Silver or Gold anytime to get even more benefits. We'll prorate your current membership.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>What if I don't shop for a month?</strong><br>
+                    Your membership continues and benefits remain active. There's no "use it or lose it" - take your time!
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Your Bronze Glow membership directly supports a Black woman entrepreneur and our mission to provide premium
+                    skincare for melanin-rich skin. A portion of all membership fees goes toward community initiatives supporting
+                    Black women in business. We promise transparent pricing, easy cancellation, and genuine care for our members.
+                    You're not just a customer - you're part of the Deja's Butters family. Welcome! 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropical Escape Bundle - Deja's Butters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <h1 class="brand-name">Deja's Butters</h1>
+                <p class="brand-tagline">Pure • Organic • Natural | Black-Owned 👑</p>
+            </div>
+        </div>
+        <nav class="nav-tabs">
+            <a href="index.html" class="nav-tab">Home</a>
+            <a href="about.html" class="nav-tab">About Us</a>
+            <a href="faq.html" class="nav-tab">FAQ</a>
+            <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
+                <span class="cart-icon-minimal">🛒</span> Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="javascript:history.back()" class="back-button">← Back</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #ffe4b5 0%, #ffa500 100%);">
+                    <span class="product-icon" style="font-size: 4rem;">🌴</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Tropical Escape Bundle</h1>
+                    <p class="product-price" style="font-size: 2rem; color: var(--primary-color); font-weight: 600;">$72.99</p>
+                    <p style="text-decoration: line-through; color: #999; margin-top: -0.5rem;">Regular price: $88.97</p>
+                    <p style="color: var(--accent-color); font-weight: 600; margin-top: 0.5rem;">💚 You save $16!</p>
+
+                    <div class="product-detail-description">
+                        <h3>Bundle Description</h3>
+                        <p>
+                            Transport yourself to paradise with tropical skincare favorites! This sunshine-infused bundle combines
+                            Coconut Oil, Mango Butter, and a Citrus Glow Scrub for the ultimate tropical experience. These lightweight,
+                            fast-absorbing formulas are perfect for melanin-rich skin that wants moisture without heaviness.
+                        </p>
+                        <p>
+                            The invigorating citrus scents energize your senses while the tropical ingredients brighten and protect
+                            your darker skin from sun damage and environmental stressors. It's like a beach vacation in a bottle -
+                            minus the sand! Perfect for summer or whenever you need a mood boost.
+                        </p>
+                    </div>
+
+                    <div class="ingredients-section" style="margin-top: 2rem;">
+                        <h3>📦 What's Included</h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+                                🥥 <a href="butter-citrus.html" class="bundle-product-link">Coconut Oil Butter (Citrus Burst)</a>
+                                <span style="float: right; color: #999;">$25.99</span>
+                            </li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+                                🥭 <a href="butter-vanilla.html" class="bundle-product-link">Mango Butter (Vanilla Bliss)</a>
+                                <span style="float: right; color: #999;">$28.99</span>
+                            </li>
+                            <li style="padding: 0.5rem 0;">
+                                🍊 <a href="scrub-citrus.html" class="bundle-product-link">Citrus Glow Body Scrub</a>
+                                <span style="float: right; color: #999;">$33.99</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="add-to-cart" onclick="addToCart('Tropical Escape Bundle', 72.99)" style="width: 100%; padding: 1rem; margin-top: 2rem; font-size: 1.1rem;">Add Bundle to Cart - $72.99</button>
+                </div>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Bundle Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Lightweight Hydration:</strong> Perfect for melanin-rich skin that doesn't like heavy formulas - absorbs quickly without greasiness</li>
+                    <li><strong>Natural Sun Protection:</strong> Coconut oil and mango butter provide SPF 4-6 protection (still use sunscreen!)</li>
+                    <li><strong>Brightens Skin Tone:</strong> Vitamin C from citrus ingredients naturally brightens and evens melanin-rich skin</li>
+                    <li><strong>Mood Boosting:</strong> Energizing citrus aromatherapy lifts spirits and reduces stress</li>
+                    <li><strong>Fast Absorption:</strong> Get dressed quickly - these tropical formulas sink in without leaving residue on darker skin</li>
+                    <li><strong>Summer Perfect:</strong> Ideal for hot weather when you want moisture without feeling heavy or sticky</li>
+                    <li><strong>Anti-Aging:</strong> Vitamins A, C, and E fight free radicals and protect melanin-rich skin from premature aging</li>
+                    <li><strong>Best Value:</strong> Save $16 and get everything you need for a complete tropical skincare routine</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use This Bundle</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Your Tropical Routine:</strong> Perfect for morning use or after beach/pool days!
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Step 1:</strong> Exfoliate with Citrus Glow Scrub 2-3 times per week. The energizing scent wakes up
+                    your senses while gentle exfoliation removes dead skin cells and reveals brighter melanin-rich skin underneath.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Step 2:</strong> After showering, apply Coconut Oil Butter to your body. The lightweight formula
+                    absorbs fast, making it perfect for busy mornings when you need to get dressed quickly.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Step 3:</strong> Use Mango Butter on your face, neck, and any areas prone to dryness or sun damage.
+                    The silky texture is perfect for melanin-rich facial skin.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Best Results:</strong> Use daily, especially during summer months or when you need an energy boost.
+                    The tropical scents and lightweight textures make this routine feel like a treat, not a chore!
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every product in this bundle is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We source our coconut oil from fair-trade farms in the Philippines and our mango butter
+                    from sustainable farms in India. All citrus essential oils are 100% pure and therapeutic-grade. Free shipping
+                    included with this bundle! We never test on animals and are committed to ethical sourcing. Our products are
+                    free from parabens, sulfates, synthetic fragrances, and artificial colors. What you see on the label is what
+                    you get - pure, tropical goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .bundle-product-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            border-bottom: 2px dashed var(--accent-color);
+            transition: all 0.3s ease;
+        }
+        .bundle-product-link:hover {
+            border-bottom: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+        }
+    </style>
+</body>
+</html>

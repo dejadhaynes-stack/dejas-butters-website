@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Essence Membership - Deja's Butters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <h1 class="brand-name">Deja's Butters</h1>
+                <p class="brand-tagline">Pure • Organic • Natural | Black-Owned 👑</p>
+            </div>
+        </div>
+        <nav class="nav-tabs">
+            <a href="index.html" class="nav-tab">Home</a>
+            <a href="about.html" class="nav-tab">About Us</a>
+            <a href="faq.html" class="nav-tab">FAQ</a>
+            <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
+                <span class="cart-icon-minimal">🛒</span> Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="javascript:history.back()" class="back-button">← Back</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);">
+                    <span class="product-icon" style="font-size: 4rem;">👑</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Gold Essence Membership</h1>
+                    <p class="product-price" style="font-size: 2rem; color: var(--primary-color); font-weight: 600;">$40/month</p>
+                    <p style="color: #666; margin-top: -0.5rem;">Ultimate VIP experience</p>
+
+                    <div class="product-detail-description">
+                        <h3>Membership Description</h3>
+                        <p>
+                            Welcome to the pinnacle of the Deja's Butters experience! Gold Essence is our premium tier for true
+                            skincare enthusiasts who want the absolute best. With 20% off everything, a full-size product every month,
+                            private virtual consultations, and white-glove service, this is skincare luxury reimagined for melanin-rich skin.
+                        </p>
+                        <p>
+                            Gold members are family. You get everything in Silver PLUS a monthly full-size product (you choose!),
+                            one-on-one virtual skincare consultations, first dibs on limited editions, VIP customer service, and the
+                            knowledge that you're making a significant impact supporting Black women in business. This is the ultimate
+                            self-care investment.
+                        </p>
+                    </div>
+
+                    <div class="ingredients-section" style="margin-top: 2rem;">
+                        <h3>✨ Member Benefits</h3>
+                        <ul>
+                            <li>✓ <strong>20% off all purchases</strong> - Maximum savings on every order</li>
+                            <li>✓ <strong>FREE shipping on all orders</strong> - No minimum, expedited processing</li>
+                            <li>✓ <strong>First access to limited editions</strong> - Shop exclusive releases before anyone else</li>
+                            <li>✓ <strong>Birthday month special gift</strong> - Premium full-size product of your choice</li>
+                            <li>✓ <strong>Monthly skincare tips newsletter</strong> - Personalized advice for your skin</li>
+                            <li>✓ <strong>Monthly full-size product</strong> - Choose any product from our collection!</li>
+                            <li>✓ <strong>Access to members-only products</strong> - Exclusive Gold-tier formulas</li>
+                            <li>✓ <strong>Private virtual skincare consultations</strong> - Quarterly 30-minute sessions with our founder</li>
+                            <li>✓ <strong>VIP customer service line</strong> - Direct access for priority support</li>
+                        </ul>
+                    </div>
+
+                    <button class="add-to-cart" onclick="alert('Membership coming soon! Email contact@dejasbutters.com to join the waitlist and we\'ll notify you when memberships launch.');" style="width: 100%; padding: 1rem; margin-top: 2rem; font-size: 1.1rem;">Join Gold - $40/month</button>
+                    <p style="text-align: center; color: #666; margin-top: 1rem; font-size: 0.9rem;">Cancel anytime, no questions asked</p>
+                </div>
+            </div>
+
+            <div class="benefits-section">
+                <h3>💚 Why Join Gold Essence?</h3>
+                <ul>
+                    <li><strong>Monthly Full-Size Product:</strong> Choose ANY product from our collection every month - valued at $25-35 alone!</li>
+                    <li><strong>20% Savings:</strong> Save $5.40 on a $27 butter, $14 on a $70 bundle - these add up fast!</li>
+                    <li><strong>Personal Consultations:</strong> Quarterly 30-minute virtual sessions with our founder to discuss your skin concerns, routine, and goals</li>
+                    <li><strong>VIP Treatment:</strong> Expedited shipping, priority customer service, and direct access when you need help</li>
+                    <li><strong>First Access to Everything:</strong> Limited editions, new releases, seasonal products - you shop first, always</li>
+                    <li><strong>Gold-Exclusive Products:</strong> Special formulas we only create for Gold members (like our 24k Gold-Infused Shea Butter!)</li>
+                    <li><strong>Community Leadership:</strong> Gold members help shape our product development through exclusive surveys and focus groups</li>
+                    <li><strong>Maximum Impact:</strong> The highest portion of Gold memberships goes toward empowering Black women entrepreneurs</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💰 Membership Savings Calculator</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Monthly Free Product Alone:</strong> $27 average value × 12 months = $324/year value. Your membership
+                    costs $480/year, so the free products cover 67% of your membership cost before any other benefits!
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Example:</strong> Buy one $70 bundle per month at 20% off = $14 savings. Plus free monthly product ($27)
+                    = $41/month in value. That's $492/year in value for a $480/year membership. You're already ahead, and that's
+                    before free shipping, consultations, and exclusive products!
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>True Value:</strong> Free monthly products ($324) + 20% savings on purchases (varies) + quarterly
+                    consultations ($400 value) + exclusive products (priceless) + VIP service = Easily $800+ per year in value
+                    for $480 membership. Plus the intangible benefits of personalized care and supporting Black business.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Best For:</strong> Customers who spend $100+ per month on skincare and want the ultimate experience.
+                    If you're serious about melanin-rich skincare and self-care, Gold Essence is the investment you deserve.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>👑 Gold-Exclusive Benefits Deep Dive</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Monthly Product Selection:</strong> Each month, choose from our entire collection. Want to try every
+                    butter type? Go for it! Prefer to stock up on your favorite? That works too! The choice is always yours.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Virtual Consultations:</strong> Four times per year, schedule a private 30-minute video call with our
+                    founder, Deja. Discuss your skin concerns, get personalized routine recommendations, learn application techniques,
+                    and ask anything about melanin-rich skincare. These sessions are worth $100 each!
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>VIP Customer Service:</strong> Gold members get a dedicated email and phone line with priority response.
+                    Most inquiries are answered within 2 hours. Have a last-minute gift need or special request? We've got you!
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Product Development Input:</strong> Help us create new products! Gold members receive exclusive surveys,
+                    can vote on new fragrances, and test beta formulas before launch. Your voice literally shapes our collection.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>❓ Frequently Asked Questions</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Can I choose different products each month?</strong><br>
+                    Absolutely! Mix it up or stick with your favorites - your choice every single month.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>How do I schedule my consultation?</strong><br>
+                    You'll receive a booking link each quarter to schedule at your convenience. Sessions are conducted via Zoom.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>What if I want to pause my membership?</strong><br>
+                    Gold members can pause for up to 3 months per year without losing benefits. Perfect for travel or budget planning!
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Is Gold Essence worth it if I don't shop that often?</strong><br>
+                    If you value personalized service, exclusive access, and supporting Black business, yes! The monthly free product
+                    alone builds your collection. But if you shop less than $50/month, Silver might be a better fit.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Gold Essence members are royalty in our community 👑. We promise to treat you like the queen you are with
+                    personalized service, exclusive products, and genuine care. Your membership makes the biggest impact on our
+                    mission to empower Black women in business and provide premium skincare for melanin-rich skin. Thank you for
+                    believing in us, supporting our dream, and investing in yourself. You deserve this level of care and luxury.
+                    Welcome to the Gold standard!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

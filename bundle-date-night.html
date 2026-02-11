@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Night Ready Bundle - Deja's Butters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <h1 class="brand-name">Deja's Butters</h1>
+                <p class="brand-tagline">Pure • Organic • Natural | Black-Owned 👑</p>
+            </div>
+        </div>
+        <nav class="nav-tabs">
+            <a href="index.html" class="nav-tab">Home</a>
+            <a href="about.html" class="nav-tab">About Us</a>
+            <a href="faq.html" class="nav-tab">FAQ</a>
+            <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
+                <span class="cart-icon-minimal">🛒</span> Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="javascript:history.back()" class="back-button">← Back</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #ffe4e1 0%, #ffc0cb 100%);">
+                    <span class="product-icon" style="font-size: 4rem;">💕</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Date Night Ready Bundle</h1>
+                    <p class="product-price" style="font-size: 2rem; color: var(--primary-color); font-weight: 600;">$46.99</p>
+                    <p style="text-decoration: line-through; color: #999; margin-top: -0.5rem;">Regular price: $55.98</p>
+                    <p style="color: var(--accent-color); font-weight: 600; margin-top: 0.5rem;">💚 You save $9!</p>
+
+                    <div class="product-detail-description">
+                        <h3>Bundle Description</h3>
+                        <p>
+                            Romantic scents for soft, glowing skin. This luxurious bundle pairs our anti-aging Avocado Butter with
+                            Rose Garden scent and the classic Shea Butter in Vanilla Bliss. Together, they create an irresistibly
+                            soft, beautifully scented, and radiant canvas for your melanin-rich skin.
+                        </p>
+                        <p>
+                            Perfect for date nights, special occasions, or anytime you want to feel extra beautiful. The romantic
+                            rose and sweet vanilla fragrances are subtle yet sophisticated, lingering on your skin throughout the
+                            evening. Your confidence will shine as bright as your glow!
+                        </p>
+                    </div>
+
+                    <div class="ingredients-section" style="margin-top: 2rem;">
+                        <h3>📦 What's Included</h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+                                🌹 <a href="butter-rose.html" class="bundle-product-link">Avocado Butter (Rose Garden)</a>
+                                <span style="float: right; color: #999;">$29.99</span>
+                            </li>
+                            <li style="padding: 0.5rem 0;">
+                                🍦 <a href="butter-vanilla.html" class="bundle-product-link">Shea Butter (Vanilla Bliss)</a>
+                                <span style="float: right; color: #999;">$26.99</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="add-to-cart" onclick="addToCart('Date Night Ready Bundle', 46.99)" style="width: 100%; padding: 1rem; margin-top: 2rem; font-size: 1.1rem;">Add Bundle to Cart - $46.99</button>
+                </div>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Bundle Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Luxurious Fragrances:</strong> Rose and vanilla create a romantic, sophisticated scent that lasts for hours on melanin-rich skin</li>
+                    <li><strong>Silky Smooth Texture:</strong> Both butters create incredibly soft, touchable skin that feels amazing</li>
+                    <li><strong>Anti-Aging Benefits:</strong> Avocado butter fights fine lines while shea butter plumps and firms</li>
+                    <li><strong>Radiant Glow:</strong> Your melanin-rich skin will literally glow - perfect for candlelit dinners and dim lighting</li>
+                    <li><strong>Confidence Boosting:</strong> When your skin looks and smells amazing, you feel unstoppable</li>
+                    <li><strong>Long-Lasting Moisture:</strong> Stay soft and hydrated all night long, no need to reapply</li>
+                    <li><strong>Natural Fragrances:</strong> Essential oils smell better and last longer than synthetic perfumes</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use This Bundle</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Date Night Prep:</strong> Take a relaxing shower or bath 1-2 hours before your date.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Step 1:</strong> While your melanin-rich skin is still slightly damp, apply Rose Garden Avocado Butter
+                    to your face, neck, décolletage, and arms. The elegant rose scent is perfect for close conversations and creates
+                    a romantic aura.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Step 2:</strong> Apply Vanilla Bliss Shea Butter to the rest of your body - legs, torso, hands. The
+                    sweet vanilla scent is warm and inviting, complementing (not competing with) the rose.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Pro Tip:</strong> Layer the scents strategically - rose where your date will be close (face, neck),
+                    vanilla everywhere else. The combination creates a unique signature scent that's all you.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Best Results:</strong> Use regularly to maintain soft, glowing melanin-rich skin. Don't save it just
+                    for dates - you deserve to feel this beautiful every day!
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every product in this bundle is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only pure Bulgarian rose essential oil (the finest in the world) and premium
+                    Madagascar vanilla. These luxury ingredients are expensive, but you're worth it! Free shipping included
+                    with this bundle! We never test on animals and are committed to bringing out your natural beauty. Our
+                    products are free from parabens, sulfates, synthetic fragrances, and artificial colors. What you see on
+                    the label is what you get - pure, romantic goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .bundle-product-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            border-bottom: 2px dashed var(--accent-color);
+            transition: all 0.3s ease;
+        }
+        .bundle-product-link:hover {
+            border-bottom: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+        }
+    </style>
+</body>
+</html>

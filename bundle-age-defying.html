@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age-Defying Essentials Bundle - Deja's Butters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <h1 class="brand-name">Deja's Butters</h1>
+                <p class="brand-tagline">Pure • Organic • Natural | Black-Owned 👑</p>
+            </div>
+        </div>
+        <nav class="nav-tabs">
+            <a href="index.html" class="nav-tab">Home</a>
+            <a href="about.html" class="nav-tab">About Us</a>
+            <a href="faq.html" class="nav-tab">FAQ</a>
+            <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
+                <span class="cart-icon-minimal">🛒</span> Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="javascript:history.back()" class="back-button">← Back</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #ffc0cb 0%, #ff1493 100%);">
+                    <span class="product-icon" style="font-size: 4rem;">⏰</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Age-Defying Essentials</h1>
+                    <p class="product-price" style="font-size: 2rem; color: var(--primary-color); font-weight: 600;">$54.99</p>
+                    <p style="text-decoration: line-through; color: #999; margin-top: -0.5rem;">Regular price: $64.98</p>
+                    <p style="color: var(--accent-color); font-weight: 600; margin-top: 0.5rem;">💚 You save $10!</p>
+
+                    <div class="product-detail-description">
+                        <h3>Bundle Description</h3>
+                        <p>
+                            Our most powerful anti-aging formulas for mature melanin-rich skin. This sophisticated bundle combines
+                            Collagen Peptides Butter with Avocado Butter - two of nature's most effective anti-aging ingredients.
+                            Together, they target fine lines, loss of elasticity, age spots, and all the signs of aging that affect
+                            darker skin tones.
+                        </p>
+                        <p>
+                            While melanin-rich skin ages more slowly than lighter skin tones, we still need targeted care for mature skin.
+                            This bundle addresses the unique aging concerns of darker skin - maintaining firmness, fading age spots, and
+                            preserving that youthful glow. Age is just a number when you have the right skincare!
+                        </p>
+                    </div>
+
+                    <div class="ingredients-section" style="margin-top: 2rem;">
+                        <h3>📦 What's Included</h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+                                ✨ <a href="butter-rose.html" class="bundle-product-link">Collagen Peptides Butter (Rose Garden)</a>
+                                <span style="float: right; color: #999;">$34.99</span>
+                            </li>
+                            <li style="padding: 0.5rem 0;">
+                                🥑 <a href="butter-lavender.html" class="bundle-product-link">Avocado Butter (Lavender Dreams)</a>
+                                <span style="float: right; color: #999;">$29.99</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="add-to-cart" onclick="addToCart('Age-Defying Essentials Bundle', 54.99)" style="width: 100%; padding: 1rem; margin-top: 2rem; font-size: 1.1rem;">Add Bundle to Cart - $54.99</button>
+                </div>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Bundle Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Double Collagen Boost:</strong> Collagen peptides + avocado's collagen-stimulating vitamins work together to firm and lift</li>
+                    <li><strong>Reduces Fine Lines:</strong> Powerful anti-aging ingredients smooth wrinkles and prevent new ones on melanin-rich skin</li>
+                    <li><strong>Fades Age Spots:</strong> Vitamins A, C, and E target hyperpigmentation and age spots common in mature darker skin</li>
+                    <li><strong>Improves Elasticity:</strong> Restore bounce and firmness to skin that's lost elasticity over time</li>
+                    <li><strong>Deep Hydration:</strong> Mature melanin-rich skin needs extra moisture - these butters deliver</li>
+                    <li><strong>Antioxidant Protection:</strong> Fight free radicals that cause premature aging and damage to darker skin</li>
+                    <li><strong>Luxury Experience:</strong> Rose and lavender scents create a spa-like anti-aging ritual</li>
+                    <li><strong>Proven Results:</strong> Customers report visible improvements in skin firmness and tone within 6-8 weeks</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use This Bundle</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Anti-Aging Routine:</strong> Consistency is crucial for anti-aging results. Use both butters daily.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Morning Routine:</strong> After cleansing, apply Avocado Butter (Lavender Dreams) to face, neck,
+                    décolletage, and hands. The lighter texture absorbs quickly, making it perfect for morning use under makeup.
+                    The lavender scent starts your day with calm energy.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Evening Routine:</strong> Before bed, apply Collagen Peptides Butter (Rose Garden) to the same areas.
+                    The richer formula works overnight when skin repair is most active. Massage in upward motions to stimulate
+                    circulation and fight gravity's effects on melanin-rich skin.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Body Care:</strong> Don't forget your body! Use Avocado Butter on elbows, knees, and anywhere you
+                    notice aging signs. Use Collagen Peptides Butter on areas with loss of firmness.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Best Results:</strong> Use faithfully for 8-12 weeks to see significant anti-aging results. Take
+                    before photos - you'll be amazed at the transformation in your melanin-rich skin! Pair with sunscreen daily
+                    for maximum protection.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every product in this bundle is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use premium marine collagen peptides (the most bioavailable form) and organic avocados
+                    from sustainable farms. These are our most advanced anti-aging formulas, developed specifically for mature
+                    melanin-rich skin after extensive research and testing. Free shipping included with this bundle! We never
+                    test on animals and are committed to helping you age gracefully and beautifully. Our products are free from
+                    parabens, sulfates, synthetic fragrances, and artificial colors. What you see on the label is what you get -
+                    pure, age-defying goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .bundle-product-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            border-bottom: 2px dashed var(--accent-color);
+            transition: all 0.3s ease;
+        }
+        .bundle-product-link:hover {
+            border-bottom: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+        }
+    </style>
+</body>
+</html>

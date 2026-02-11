@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Care Sunday Bundle - Deja's Butters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <h1 class="brand-name">Deja's Butters</h1>
+                <p class="brand-tagline">Pure • Organic • Natural | Black-Owned 👑</p>
+            </div>
+        </div>
+        <nav class="nav-tabs">
+            <a href="index.html" class="nav-tab">Home</a>
+            <a href="about.html" class="nav-tab">About Us</a>
+            <a href="faq.html" class="nav-tab">FAQ</a>
+            <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
+                <span class="cart-icon-minimal">🛒</span> Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="javascript:history.back()" class="back-button">← Back</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #dda0dd 0%, #9370db 100%);">
+                    <span class="product-icon" style="font-size: 4rem;">🌸</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <h1>Self-Care Sunday Bundle</h1>
+                    <p class="product-price" style="font-size: 2rem; color: var(--primary-color); font-weight: 600;">$52.99</p>
+                    <p style="text-decoration: line-through; color: #999; margin-top: -0.5rem;">Regular price: $64.98</p>
+                    <p style="color: var(--accent-color); font-weight: 600; margin-top: 0.5rem;">💚 You save $12!</p>
+
+                    <div class="product-detail-description">
+                        <h3>Bundle Description</h3>
+                        <p>
+                            Everything you need for the ultimate relaxation ritual. This soothing bundle combines therapeutic-grade
+                            lavender essential oils with nourishing plant butters for a complete mind-body wellness experience.
+                            Perfect for melanin-rich skin that deserves premium self-care and deep relaxation.
+                        </p>
+                        <p>
+                            Transform your Sunday (or any day!) into a spa-like sanctuary. The calming lavender scent reduces stress
+                            and promotes better sleep, while the rich formulas deeply hydrate and nourish darker skin tones. This is
+                            more than skincare - it's a self-love ritual.
+                        </p>
+                    </div>
+
+                    <div class="ingredients-section" style="margin-top: 2rem;">
+                        <h3>📦 What's Included</h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+                                💜 <a href="butter-lavender.html" class="bundle-product-link">Essential Oils Blend Butter (Lavender Dreams)</a>
+                                <span style="float: right; color: #999;">$30.99</span>
+                            </li>
+                            <li style="padding: 0.5rem 0;">
+                                🌿 <a href="scrub-lavender.html" class="bundle-product-link">Lavender Calm Body Scrub</a>
+                                <span style="float: right; color: #999;">$33.99</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="add-to-cart" onclick="addToCart('Self-Care Sunday Bundle', 52.99)" style="width: 100%; padding: 1rem; margin-top: 2rem; font-size: 1.1rem;">Add Bundle to Cart - $52.99</button>
+                </div>
+            </div>
+
+            <div class="benefits-section">
+                <h3>✨ Bundle Benefits for Melanin-Rich Skin</h3>
+                <ul>
+                    <li><strong>Aromatherapy & Skincare Combined:</strong> Lavender essential oils provide stress relief while nourishing melanin-rich skin</li>
+                    <li><strong>Promotes Better Sleep:</strong> Calming lavender scent helps you unwind and sleep more deeply</li>
+                    <li><strong>Soothes Sensitive Skin:</strong> Anti-inflammatory properties calm irritation and redness on darker skin</li>
+                    <li><strong>Deep Relaxation:</strong> The ritual of self-care reduces stress and promotes mental wellness</li>
+                    <li><strong>Gentle Exfoliation:</strong> Lavender scrub removes dead skin without harsh abrasives</li>
+                    <li><strong>Long-Lasting Moisture:</strong> Essential oils blend locks in hydration for 24+ hours</li>
+                    <li><strong>Cost Savings:</strong> Save $12 compared to buying products separately</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💚 How to Use This Bundle</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Your Self-Care Ritual:</strong> Set aside 30-60 minutes for yourself. Light candles, play soft music,
+                    and prepare for total relaxation.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Step 1:</strong> In a warm bath or shower, massage Lavender Calm Scrub onto damp skin using gentle
+                    circular motions. Breathe deeply, inhaling the calming lavender scent. Rinse thoroughly.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Step 2:</strong> While your melanin-rich skin is still slightly damp, apply Essential Oils Blend Butter.
+                    Take your time massaging it in, focusing on areas of tension. The aromatherapy benefits will help you fully relax.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Best Results:</strong> Use weekly for your self-care ritual, or whenever you need to de-stress and
+                    reconnect with yourself. Your skin and mind will thank you.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Every product in this bundle is handcrafted with love by a Black woman in small batches to ensure the
+                    highest quality. We use only 100% pure, therapeutic-grade lavender essential oil - never synthetic fragrances.
+                    Our products are formulated with darker skin tones in mind, providing deep nourishment while honoring your
+                    self-care journey. Free shipping included with this bundle! We never test on animals and are committed to
+                    bringing out your natural glow. What you see on the label is what you get - pure, natural goodness made for YOU. 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        .bundle-product-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            border-bottom: 2px dashed var(--accent-color);
+            transition: all 0.3s ease;
+        }
+        .bundle-product-link:hover {
+            border-bottom: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+        }
+    </style>
+</body>
+</html>

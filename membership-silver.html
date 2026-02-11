@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Radiance Membership - Deja's Butters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <h1 class="brand-name">Deja's Butters</h1>
+                <p class="brand-tagline">Pure • Organic • Natural | Black-Owned 👑</p>
+            </div>
+        </div>
+        <nav class="nav-tabs">
+            <a href="index.html" class="nav-tab">Home</a>
+            <a href="about.html" class="nav-tab">About Us</a>
+            <a href="faq.html" class="nav-tab">FAQ</a>
+            <a href="#" class="nav-tab cart-tab" onclick="toggleCart(); return false;">
+                <span class="cart-icon-minimal">🛒</span> Cart (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <a href="javascript:history.back()" class="back-button">← Back</a>
+
+            <div class="product-detail-grid">
+                <div class="product-detail-image" style="background: linear-gradient(135deg, #c0c0c0 0%, #d3d3d3 100%);">
+                    <span class="product-icon" style="font-size: 4rem;">✨</span>
+                </div>
+
+                <div class="product-detail-info">
+                    <div class="bundle-badge" style="display: inline-block; background: #c0c0c0; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; margin-bottom: 1rem;">MOST POPULAR</div>
+                    <h1>Silver Radiance Membership</h1>
+                    <p class="product-price" style="font-size: 2rem; color: var(--primary-color); font-weight: 600;">$25/month</p>
+                    <p style="color: #666; margin-top: -0.5rem;">Perfect for regular customers</p>
+
+                    <div class="product-detail-description">
+                        <h3>Membership Description</h3>
+                        <p>
+                            Our most popular tier! Silver Radiance is designed for customers who shop regularly and want maximum
+                            value. With 15% off all purchases, FREE shipping on every order, quarterly surprise boxes, and access
+                            to members-only products, this tier delivers incredible value for melanin-rich skincare enthusiasts.
+                        </p>
+                        <p>
+                            Silver members are the heart of our community. You get all the Bronze benefits PLUS free shipping on
+                            every order (no minimum!), surprise sample boxes each quarter, and exclusive access to limited-edition
+                            products we only make for members. If you shop 2-3 times per month, this tier pays for itself!
+                        </p>
+                    </div>
+
+                    <div class="ingredients-section" style="margin-top: 2rem;">
+                        <h3>✨ Member Benefits</h3>
+                        <ul>
+                            <li>✓ <strong>15% off all purchases</strong> - Bigger savings on every order</li>
+                            <li>✓ <strong>FREE shipping on all orders</strong> - No minimum! Even small orders ship free</li>
+                            <li>✓ <strong>Early access to new products</strong> - Shop new releases before the public</li>
+                            <li>✓ <strong>Birthday month special gift</strong> - A full-size product surprise</li>
+                            <li>✓ <strong>Monthly skincare tips newsletter</strong> - Expert advice for melanin-rich skin</li>
+                            <li>✓ <strong>Quarterly surprise sample box</strong> - Try new fragrances and products before they launch</li>
+                            <li>✓ <strong>Access to members-only products</strong> - Exclusive formulas not available to the public</li>
+                        </ul>
+                    </div>
+
+                    <button class="add-to-cart" onclick="alert('Membership coming soon! Email contact@dejasbutters.com to join the waitlist and we\'ll notify you when memberships launch.');" style="width: 100%; padding: 1rem; margin-top: 2rem; font-size: 1.1rem;">Join Silver - $25/month</button>
+                    <p style="text-align: center; color: #666; margin-top: 1rem; font-size: 0.9rem;">Cancel anytime, no questions asked</p>
+                </div>
+            </div>
+
+            <div class="benefits-section">
+                <h3>💚 Why Join Silver Radiance?</h3>
+                <ul>
+                    <li><strong>Maximum Savings:</strong> 15% off means you save $4+ on every $27 butter - that's huge!</li>
+                    <li><strong>Free Shipping Always:</strong> Order a single $12 travel size? Free shipping. Order a $100 bundle? Free shipping. No math required!</li>
+                    <li><strong>Quarterly Surprise Boxes:</strong> Every 3 months, receive a curated box of samples, travel sizes, and new products to try</li>
+                    <li><strong>Members-Only Products:</strong> We create special limited-edition formulas exclusively for Silver and Gold members</li>
+                    <li><strong>Better Birthday Gifts:</strong> Silver members receive a full-size product (your choice!) during their birthday month</li>
+                    <li><strong>Priority Support:</strong> Your questions and concerns get bumped to the front of the line</li>
+                    <li><strong>Community Impact:</strong> A larger portion of Silver memberships goes toward our community initiatives</li>
+                </ul>
+            </div>
+
+            <div class="usage-section">
+                <h3>💰 Membership Savings Calculator</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Example 1:</strong> Purchase 2 butters per month at $27 each = $54. With 15% off, you save $8.10 per
+                    month + $5 shipping savings = $13.10/month in savings. That's $157.20 per year in savings vs $300 membership
+                    cost, PLUS you get 4 surprise boxes worth $50+ each = $200+ value. Total value: $357+!
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Example 2:</strong> Buy one $70 bundle per month. Save $10.50 + $5 shipping = $15.50/month = $186/year
+                    in savings. Add quarterly surprise boxes ($200 value) + members-only products (priceless!) = You're saving
+                    $86+ per year while getting exclusive perks.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Best Value:</strong> If you spend $50+ per month on Deja's Butters, Silver Radiance is a no-brainer.
+                    You'll save money, get free shipping, enjoy surprise treats, and support a Black-owned business. Win-win-win!
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>🎁 What's in the Quarterly Surprise Box?</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Each quarter, Silver and Gold members receive a surprise box containing:
+                </p>
+                <ul style="color: #666;">
+                    <li>2-3 travel-size products in new or seasonal fragrances</li>
+                    <li>Sneak peek samples of upcoming releases (try before they launch!)</li>
+                    <li>Exclusive member-only product not available for purchase</li>
+                    <li>Handwritten note with skincare tips for melanin-rich skin</li>
+                    <li>Discount code for an extra treat</li>
+                </ul>
+                <p style="color: #666; line-height: 1.8;">
+                    Each box is valued at $50-70, making your $25/month membership an incredible deal!
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>❓ Frequently Asked Questions</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Is the free shipping really unlimited?</strong><br>
+                    Yes! Order as often as you want, no minimums. Even a $5 sample ships free.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Can I choose what's in my surprise box?</strong><br>
+                    We curate each box, but you can specify preferences (e.g., "love citrus, hate lavender") in your profile.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>What are members-only products?</strong><br>
+                    Special formulas, unique fragrance blends, or seasonal items we only make for Silver/Gold members.
+                </p>
+                <p style="color: #666; line-height: 1.8;">
+                    <strong>Can I downgrade to Bronze?</strong><br>
+                    Yes! Downgrade or cancel anytime. Your benefits continue until the end of your billing cycle.
+                </p>
+            </div>
+
+            <div class="ingredients-section" style="margin-top: 2rem;">
+                <h3>💚 Our Promise</h3>
+                <p style="color: #666; line-height: 1.8;">
+                    Silver Radiance members are our VIPs! We're committed to making your membership worth every penny through
+                    exclusive products, surprise delights, and exceptional service. Your membership supports a Black woman
+                    entrepreneur and funds community initiatives that empower Black women in business. We promise authenticity,
+                    quality, and care in every interaction. Welcome to the family! 👑
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deja's Butters</h3>
+                    <p>Bringing nature's best to your skincare routine</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@dejasbutters.com</p>
+                    <p>Phone: (501) 339-3734</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deja's Butters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
