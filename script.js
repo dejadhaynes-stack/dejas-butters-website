@@ -337,7 +337,6 @@ const productData = {
             'Chamomile Essential Oil',
             'Rose Hip Oil',
             'Jojoba Oil',
-            'Sweet Almond Oil',
             'Organic Coconut Butter Base'
         ],
         benefits: [
