@@ -549,6 +549,20 @@ header {
     border-bottom: none;
 }
 
+.bundle-product-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    border-bottom: 1px dashed var(--primary-color);
+}
+
+.bundle-product-link:hover {
+    color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    border-bottom-style: solid;
+}
+
 .bundle-pricing {
     text-align: center;
     padding: 1.5rem 0;
